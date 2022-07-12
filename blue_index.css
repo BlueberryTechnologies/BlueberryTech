@@ -1,10 +1,20 @@
 body {
     background-color: powderblue;
+    margin: auto;
   }
   h1 {
     color: blue;
     margin: auto;
     padding: 10px;
+    text-align: center;
+  }
+  h2 {
+    color: gold;
+    margin: auto;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    box-shadow: 3px 3px black;
+    padding: 20px;
     text-align: center;
   }
   p {
@@ -15,14 +25,10 @@ body {
   }
   footer {
     color: coral;
-    margin: auto;
-    padding-top: 25%;
-    text-align: left;
+    text-align: center;
+    padding-top: 20%;
   }
   h5{
-    color: rebeccapurple;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
-    margin: auto;
-    text-align: center;
   }

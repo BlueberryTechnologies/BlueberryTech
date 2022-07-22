@@ -1,6 +1,7 @@
 body {
     background-color: powderblue;
     margin: auto;
+    text-align: center;
   }
   h1 {
     color: blue;
@@ -15,6 +16,13 @@ body {
     text-shadow: 2px 2px black;
     box-shadow: 3px 3px black;
     padding: 20px;
+    text-align: center;
+  }
+  h3 {
+    color: beige;
+    margin: auto;
+    font-size: 25px;
+    padding: 10px;
     text-align: center;
   }
   p {
@@ -64,5 +72,6 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    text-align: left;
+    text-align: center;
+
   }

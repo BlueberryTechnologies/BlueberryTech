@@ -1,21 +1,23 @@
+:root{
+	--main-bg: #f5f5f5;
+	--main-text: black;
+	--alt-bg: #121212;
+	--alt-text: #f5f5f5;
+}
+
 @font-face {
-	font-family: "JetBrainsMono";
-	src: url(../Fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-2.ttf),
-     url(../Fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-Medium.ttf),
-	url(../Fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-Bold.ttf),
-	url(../Fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-BoldItalic.ttf),
-	url(../Fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-Light.ttf),
-	url(../Fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-LightItalic.ttf);
+	font-family: "BlueberryCorporate";
+	src: url(../Fonts/CorporateFont/BlueberryDevFont_LN.otf);
 }
 
 body {
-    font-family: "JetBrainsMono";
+    font-family: BlueberryCorporate;
     scroll-behavior: smooth;
-    background-color: #1E1E1E;
+    background-color: var(--main-bg);
     overflow-x: hidden;
     user-select: none;
     -webkit-user-drag: none;
-    color: white;
+    color: var(--main-text);
 }
 
 header img {
@@ -26,26 +28,59 @@ header img {
 	-webkit-user-drag: none;
 }
 
-#content {
-	margin-left: 2.5%;
+img {
+    max-width: 55%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
-h2 {
-	font-size: 55px;
-	font-weight: lighter;
-	font-style: italic;
-	margin-bottom: 0;
+#content {
+	margin-left: 2.5%;
+	font-family: BlueberryCorporate;
+	font-size:  30px;
+	width: 50%;
+	margin-top:  5%;
+}
+#logo{
+	text-align: left;
+	margin-left: 15%;
+	font-size:  6vw;
+
+	font-family: BlueberryCorporate;
 }
 
 h1 {
-	font-size:  65px;
-	font-weight:  bold;
-	margin: 0;
+	font-weight: normal;
 }
 
-p {
-	font-weight:  lighter;
-	font-size:  25px;
-	width: 50%;
-	margin-top:  5%;
+/* Side Dropdown*/
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.Buttons{
+	display: none;
+	position: absolute;
+	background-color: var(--main-bg);
+	min-width: 50px;
+	box-shadow: 10px 8px 10px 0px rgba(0,0,0,0.2);
+  	padding: 5px 50px;
+  	z-index: 1;
+  	border-radius: 25px;
+}
+.dropdown:hover .Buttons{
+	margin-left: 2%;
+	display: inline-block;
+}
+.button {
+  background-color: var(--main-bg);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: var(--main-text);
 }

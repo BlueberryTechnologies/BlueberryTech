@@ -1,39 +1,16 @@
-<!-- Blueberry Tech - Last Update: 221009 - 0208 - riley -->
+<!-- Blueberry Tech - Last Update: 221010 - 0208 - riley -->
 
 <!DOCTYPE html>
 
 <html lang="en-us">
-    <script>
-        function darkMode(){
-            const dark = '#121212';
-            const offWhite = '#f5f5f5';
-            const black = "black";
-            var buttons = document.getElementsByClassName('Buttons');
-            var element = document.querySelector('#Buttons');
-            if (element.innerHTML == 'Dark Mode'){
-                // Setting to dark mode
-                element.innerHTML = 'Light Mode';
-                for(var i = 0; i < buttons.length; i++){
-                    buttons[i].style.backgroundColor = dark;
-                    buttons[i].style.boxShadow = "0px 8px 10px 5px rgba(255,255,255,0.1)";
-                }
-                element.style.color = offWhite; // Changes the button text
-                document.body.style.backgroundColor = dark; // Dark Background
-                document.body.style.color = offWhite; // Changes the whole page text
-            }else{
-                // Setting to light mode
-                for(var i = 0; i < buttons.length; i++){
-                    buttons[i].style.backgroundColor = offWhite;
-                    buttons[i].style.boxShadow = "0px 8px 10px 5px rgba(0,0,0,0.2)";
-                }
-                element.innerHTML = 'Dark Mode';
-                element.style.color = black;
-                document.body.style.backgroundColor = offWhite;
-                document.body.style.color = black;
-            }
-            
-        }
-    </script>
+
+    <!--
+        JavaScript Scripts
+    -->
+    <script type="text/javascript" src="Data/Scripts/DarkMode.js"></script>
+    <script src="Data/Scripts/typed.js-2.0.12/lib/typed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,23 +21,33 @@
     <body>
         <header>
             
-            <div class="dropdown">
-              <img src="Data/Images/logotransparent.png">
-                <div class="Buttons">
-                    <p id="Buttons" type="button" onclick="darkMode()">Dark Mode</p>
-                </div>
+            <div class="BananaDropdown">
+                <a href="index.html">
+                    <img class="BananaDropdown_image" src="Data/Images/logotransparent.png">
+                </a>
+                <!--
+                    <div class="Buttons">
+                        <p id="Buttons" type="button" onclick="darkMode()">Dark Mode</p>
+                    </div>
+                    -->
             </div>
+            
         </header>
-        <section id="logo">
-            <h1>Blueberry Tech.</h1>
-            <h1>Simply Experienced.</h1>
-        </section>
+
+
+        <div id="WelcomeMessage">
+            <h1 id="WelcomeHeader">B</h1>
+            <h1 id="WelcomeHeader2">S</h1>
+        </div>
+        <script type="text/javascript" src="Data/Scripts/WelcomeText.js"></script>
+
         <section id="content">
             <p>Sorry, We're Under Maintenance</p>
             <p>Our team is currently working on a new and improved version of this site. Check back soon!</p>
         </section>
         <footer>
-            <p1>© Copyright 2022 Blueberry Technologies - Version a3.1</p1>
+            <p>Version a3.1 - © Copyright 2022 Blueberry Technologies</p>
+            <a href="about/changelog/index.html">View Our Changelog Here</a>
         </footer>
     </body>
 </html>

@@ -1,8 +1,8 @@
 :root{
-	--main-bg: #f5f5f5;
-	--main-text: black;
-	--alt-bg: #121212;
-	--alt-text: #f5f5f5;
+	--mainBackground: #f5f5f5; // Off White Background
+	--mainText: black;
+	--altBackground: #121212; // Gray Background
+	--altText: #f5f5f5; // Off White Text
 }
 
 @font-face {
@@ -13,25 +13,11 @@
 body {
     font-family: BlueberryCorporate;
     scroll-behavior: smooth;
-    background-color: var(--main-bg);
+    background-color: var(--mainBackground);
     overflow-x: hidden;
     user-select: none;
     -webkit-user-drag: none;
-    color: var(--main-text);
-}
-
-header img {
-	max-width: 20%;
-	margin-top:  2.5%;
-	margin-bottom: 5%;
-	user-select: none;
-	-webkit-user-drag: none;
-}
-
-img {
-    max-width: 55%;
-    height: auto;
-    width: auto\9; /* ie8 */
+    color: var(--mainText);
 }
 
 #content {
@@ -41,40 +27,55 @@ img {
 	width: 50%;
 	margin-top:  5%;
 }
-#logo{
+#changelogContent{
+	margin-left: 2.5%;
+	font-family: BlueberryCorporate;
+	width: 50%;
+}
+#WelcomeMessage{
 	text-align: left;
+	margin-top: -5%;
 	margin-left: 15%;
-	font-size:  6vw;
-
+	font-size:  5.5vw;
+	text-decoration: none;
 	font-family: BlueberryCorporate;
 }
 
 h1 {
+	text-decoration: none;
 	font-weight: normal;
 }
 
+#WelcomeHeader2{
+	color: var(--mainBackground);
+}
+
 /* Side Dropdown*/
-.dropdown{
+.BananaDropdown{
 	position: relative;
-	display: inline-block;
+	width: 20%;
+}
+.BananaDropdown_image{
+	display: block;
+	width: 100%;
 }
 
 .Buttons{
 	display: none;
 	position: absolute;
-	background-color: var(--main-bg);
+	background-color: var(--mainBackground);
 	min-width: 50px;
 	box-shadow: 10px 8px 10px 0px rgba(0,0,0,0.2);
   	padding: 5px 50px;
   	z-index: 1;
   	border-radius: 25px;
 }
-.dropdown:hover .Buttons{
+.BananaDropdown:hover .Buttons{
 	margin-left: 2%;
 	display: inline-block;
 }
 .button {
-  background-color: var(--main-bg);
+  background-color: var(--mainBackground);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -82,5 +83,11 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  color: var(--main-text);
+  color: var(--mainText);
+}
+
+footer{
+	margin-top: 50px;
+	text-align: center;
+	text-decoration: none;
 }

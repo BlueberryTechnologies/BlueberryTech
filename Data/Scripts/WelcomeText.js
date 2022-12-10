@@ -1,4 +1,5 @@
 // Using Typed
+/*
 var typed = new Typed("#WelcomeHeader", {
 	strings: [' ','Blueberry Tech.'],
 	typeSpeed: 275,
@@ -12,3 +13,4 @@ var typed = new Typed("#WelcomeHeader", {
 		})
 	}
 });
+*/

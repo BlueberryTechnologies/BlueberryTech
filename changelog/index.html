@@ -1,102 +1,93 @@
 <!-- Blueberry Tech - Last Update: 221208 - riley -->
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8"> <!-- Sets the locale of the site -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../Data/CSS/mainPage.css"> <!-- Sets the CSS file. This is a global file -->
-        <title>Blueberry Technologies</title> <!-- This sets the title of the website (where the tab is)-->
-    </head>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Sets the locale of the site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Data/CSS/mainPage.css" />
+    <!-- Sets the CSS file. This is a global file -->
+    <title>Blueberry Technologies</title>
+    <!-- This sets the title of the website (where the tab is)-->
+  </head>
+
+  <body>
     <header>
-        <a href="index.html"><img class="HeaderImage" src="../Data/Images/header.png"></a>
+      <div class="index-html-header">
+        <a href="index.html"
+          ><img class="HeaderImage" src="../../Data/Images/header.png"
+        /></a>
         <div class="navbar">
-            <div class="navbar-centered">
-              <a href="../../index.html" class="active">Home</a>
-            </div>
-
-            <a href="../aboutus/index.html">About</a>
-            <a href="../contactus/index.html">Contact</a>
-            <a href="../changelog/index.html">Changelog</a>
-
-            <div class="navbar-right">
-              <a href="../login/index.html">Login</a>
-              <a href="../signup/index.html">Sign Up</a>
-            </div>
+          <!-- Centered link -->
+          <div class="navbar-centered">
+            <a href="../index.html" class="active">Home</a>
           </div>
+
+          <!-- Left-aligned links (default) -->
+          <a href="../aboutus/index.html">About</a>
+          <a href="../contactus/index.html">Contact</a>
+          <a href="../changelog/index.html">Changelog</a>
+
+          <!-- Right-aligned links -->
+          <div class="navbar-right">
+            <a href="../login/index.html">Login</a>
+            <a href="../signup/index.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
     </header>
+    <main>
+      <div class="changelog-html-main">
+        <h1 id="Changelog">Changelog</h1>
+        <div>
+          <h2>10/9/22 - Version a3.0</h2>
+          <p>- Updated total design of the site.</p>
+          <p>- Added new fonts, colors, and logo.</p>
+          <p>- Added Dark/Light Mode Toggle.</p>
+        </div>
+        <div>
+          <h2>10/10/22 - Version a3.1</h2>
+          <p>- Updated spacings, margins, width of various text elements.</p>
+          <p>
+            - Moved Dark/Light Mode Script to dedicated file + Removed
+            Dark/Light Mode. (Only for now)
+          </p>
+          <p>
+            - Added implementation of Typed.js + JQuery on the homepage.
+            (Literally took me 3 hours)
+          </p>
+          <p>
+            - Added image link back to homepage, also footer link to changelog.
+          </p>
+        </div>
 
-    <!--
-        =========================================================================
-        =========================================================================
-        =========================================================================
+        <div>
+          <h2>12/10/22 - Version a4</h2>
+          <p>- Welcome to alpha 4!! Yet another redesign.</p>
+          <p>- Scrapped Typed.js (it will come back)</p>
+          <p>- Added better nav bar to the site.</p>
+          <p>
+            - Added image link back to homepage, also footer link to changelog
+            but on every page except the changelog.
+          </p>
+          <p>
+            - New header.png image for better consistency throughout the pages.
+          </p>
+          <p>
+            - Also standards for the head, header, and footer. (This will ensure
+            those parts of each page will look the same)
+          </p>
+          <p>
+            - Buttons for new 'Login' and 'Sign Up' pages, this will be
+            implemented further down the line.
+          </p>
+          <p>- Almost ready for version r1 :)</p>
+        </div>
+      </div>
+    </main>
+  </body>
 
-        THE END OF THE HEAD SECTION (SHOULD BE THE SAME FOR ALL THE PAGES)
-
-        =========================================================================
-        =========================================================================
-        =========================================================================
-    -->
-    <body>
-        <main class="changelog-html-main">
-            <h1 id="Changelog">Changelog</h1>
-            <div>
-                <h2>10/9/22 - Version a3.0</h2>
-                    <p>
-                        - Updated total design of the site.
-                    </p>
-                    <p>
-                        - Added new fonts, colors, and logo.
-                    </p>
-                    <p>
-                        - Added Dark/Light Mode Toggle.
-                    </p>
-            </div>
-            <div>
-                <h2>10/10/22 - Version a3.1</h2>
-                    <p>
-                        - Updated spacings, margins, width of various text elements.
-                    </p>
-                    <p>
-                        - Moved Dark/Light Mode Script to dedicated file + Removed Dark/Light Mode.
-                        (Only for now)
-                    </p>
-                    <p>
-                        - Added implementation of Typed.js + JQuery on the homepage. (Literally took me 3 hours)
-                    </p>
-                    <p>
-                        - Added image link back to homepage, also footer link to changelog.
-            </div>
-            <div>
-                <h2>12/10/22 - Version a4</h2>
-                    <p>
-                        - Welcome to alpha 4!! Yet another redesign.
-                    </p>
-                    <p>
-                        - Scrapped Typed.js (it will come back)
-                    </p>
-                    <p>
-                        - Added better nav bar to the site.
-                    </p>
-                    <p>
-                        - Added image link back to homepage, also footer link to changelog but on every page except the changelog.
-                    </p>
-                    <p>
-                        - New header.png image for better consistency throughout the pages.
-                    </p>
-                    <p>
-                        - Also standards for the head, header, and footer. (This will ensure those parts of each page will look the same)
-                    </p>
-                    <p>
-                        - Buttons for new 'Login' and 'Sign Up' pages, this will be implemented further down the line.
-                    </p>
-                    <p>
-                        - Almost ready for version r1 :)
-                    </p>
-            </div>
-        </main>
-    </body>
-    <!--
+  <!--
         =========================================================================
         =========================================================================
         =========================================================================
@@ -107,8 +98,8 @@
         =========================================================================
         =========================================================================
         -->
-        
-        <!--
+
+  <!--
         =========================================================================
         =========================================================================
         =========================================================================
@@ -119,7 +110,7 @@
         =========================================================================
         =========================================================================
     -->
-    <footer class="index-html-footer">
-        <p>Version a4 - © Copyright 2022 Blueberry Technologies</p>
-    </footer>
+  <footer class="index-html-footer">
+    <p>Version a4 - © Copyright 2022 Blueberry Technologies</p>
+  </footer>
 </html>

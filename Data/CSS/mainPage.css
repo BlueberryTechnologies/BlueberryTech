@@ -16,7 +16,9 @@ THIS SECTION IS FOR THE HEAD, HEADER, AND NAVBARS
 */
 
 /* BROWSER RESETS */
-
+body {
+  margin-top: 0;
+}
 .HeaderImage {
   display: block;
   max-width: 100%;
@@ -70,13 +72,18 @@ main {
   width: 100%;
 }
 .banner {
-  background-color: aqua;
+  background-color: #333333;
   text-align: center;
-  height: 100%;
+  height: auto;
+  border-radius: 0px 0px 20px 20px;
   margin: 0;
   padding: 0;
 }
-.banner-p {
+.banner-navbar {
+  margin: 0;
+  padding: 0;
+}
+.banner a {
   font-family: BlueberryCorporate;
   font-size: 30px;
   margin: 0;

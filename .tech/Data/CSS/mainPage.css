@@ -131,6 +131,22 @@ main {
   font-family: BlueberryCorporate;
   font-size: 50px;
 }
+.index-html-p-title {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: BlueberryCorporate;
+}
+.index-html-p-date {
+  font-family: BlueberryCorporate;
+  font-size: 35px;
+}
+.index-html-p-desc {
+  font-family: BlueberryCorporate;
+  font-size: 25px;
+}
 .index-html-footer {
   font-family: BlueberryCorporate;
   display: flex;

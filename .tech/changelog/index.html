@@ -5,37 +5,29 @@
     <meta charset="UTF-8" />
     <!-- Sets the locale of the site -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../Data/CSS/mainPage.css" />
+    <link rel="stylesheet" href="../Data/CSS/mainPage.css" />
     <!-- Sets the CSS file. This is a global file -->
-    <title>Blueberry Technologies</title>
+    <title>Blueberry Technologies - Changelog</title>
     <!-- This sets the title of the website (where the tab is)-->
   </head>
 
+  <!--
+        =========================================================================
+        =========================================================================
+        =========================================================================
+
+        THE END OF THE HEAD SECTION (SHOULD BE THE SAME FOR ALL THE PAGES)
+
+        =========================================================================
+        =========================================================================
+        =========================================================================
+    -->
+
   <body>
     <header>
-      <div class="banner">
-        <div class="banner-navbar">
-          <!-- Centered link -->
-          <div class="banner-navbar-centered">
-            <a href="../index.html"
-              ><img class="BannerImage" src="../Data/Images/banner-tech.png"
-            /></a>
-            <a href="../.studios/index.html"
-              ><img
-                class="BannerImage"
-                src="../.studios/Data/Images/banner-studios.png"
-            /></a>
-            <!-- Coming soon!
-            <a href="../index.html" class="active">Records</a>
-            <a href="../index.html" class="active">Auto</a>
-            <a href="../index.html" class="active">AI</a>
-            -->
-          </div>
-        </div>
-      </div>
-      <div class="index-html-header">
-        <a href="index.html"
-          ><img class="HeaderImage" src="../../Data/Images/header.png"
+      <div class="header">
+        <a href="../index.html"
+          ><img class="HeaderImage" src="../Data/Images/header.png"
         /></a>
         <div class="navbar">
           <!-- Centered link -->
@@ -46,8 +38,10 @@
           <!-- Left-aligned links (default) -->
           <a href="../aboutus/index.html">About</a>
           <a href="../contactus/index.html">Contact</a>
-          <a href="../changelog/index.html">Changelog</a>
           <a href="../questions/index.html">Q&A</a>
+          <a class="products" href="../products/index.html"
+            >Products & Services</a
+          >
 
           <!-- Right-aligned links -->
           <div class="navbar-right">
@@ -59,8 +53,26 @@
     </header>
     <main>
       <div class="changelog-html-main">
-        <h1 id="Changelog">Changelog</h1>
+        <h1 id="Changelog">Website Changelog</h1>
         <hr />
+        <div>
+          <h2>12/16/22 - Version a4.4</h2>
+          <p>- Removed useless CSS</p>
+          <p>- Renamed CSS classes</p>
+          <p>- Moved Changelog link back to footer</p>
+          <p>- Added Products page and complementary navbar CSS</p>
+          <p>- Removed Navbar from Blueberry Tech. pages.</p>
+          <p>- Added Blueberry Studios link to Product page.</p>
+          <p>- Changed Title to match the page.</p>
+          <p>- Removed useless folders and HTML files.</p>
+          <p>- Renamed mostly all CSS classes in Blueberry Studios'</p>
+          <p>
+            - Moved Blueberry Tech. files to ./.tech (had to rename everything)
+          </p>
+          <p>
+            - Typo fix: a4.4 to a4.3 on changelog page, then added proper a4.4
+          </p>
+        </div>
         <div>
           <h2>12/12/22 - Version a4.3</h2>
           <p>- Fixed more resizing issues that were found after a4.2</p>
@@ -74,7 +86,7 @@
           <p>- Added news page on Blueberry Studios.</p>
           <p>- All links now redirect to their respective pages.</p>
           <p>- The banner now works.</p>
-          <p>- Added new mottos to each service</p>
+          <p>- Added new mottos to each services</p>
         </div>
         <div>
           <h2>12/11/22 - Version a4.2</h2>
@@ -172,6 +184,6 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <p>Version a4.3 - © Copyright 2022 Blueberry Technologies</p>
+    <p>Version a4.4 - © Copyright 2022 Blueberry Technologies</p>
   </footer>
 </html>

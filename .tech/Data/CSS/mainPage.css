@@ -7,6 +7,10 @@ THIS SECTION IS FOR FONTS
   font-family: "BlueberryCorporate";
   src: url(../Fonts/CorporateFont/BlueberryDevFont_LN.otf);
 }
+/* BROWSER RESETS */
+body {
+  margin-top: 0;
+}
 /*
 ============================================================
 ============================================================
@@ -15,10 +19,7 @@ THIS SECTION IS FOR THE HEAD, HEADER, AND NAVBARS
 ============================================================
 */
 
-/* BROWSER RESETS */
-body {
-  margin-top: 0;
-}
+/* Header */
 .HeaderImage {
   display: block;
   max-width: 100%;
@@ -30,6 +31,14 @@ header {
   width: 100%;
 }
 
+/* Navbar */
+.header {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: 1.5% auto;
+  margin-bottom: 0;
+}
 .navbar {
   position: relative;
   background-color: #333;
@@ -52,7 +61,7 @@ header {
   color: black;
 }
 
-.navbar a.active {
+.navbar a:active {
   background-color: #fee086;
   color: black;
 }
@@ -68,28 +77,30 @@ header {
 .navbar-right {
   float: right;
 }
-main {
-  width: 100%;
-}
+
+/* Upper Banner */
 .banner {
-  background-color: #333333;
+  background-color: #333;
   text-align: center;
-  height: auto;
+  height: 50%;
   border-radius: 0px 0px 20px 20px;
-  margin: 0;
-  padding: 0;
-}
-.banner-navbar {
   margin: 0;
   padding: 0;
 }
 .banner a {
   font-family: BlueberryCorporate;
-  font-size: 30px;
+  font-size: 10px;
   margin: 0;
   padding: 0;
 }
-
+.products {
+  font-style: italic;
+  color: #fee086 !important;
+}
+.products:hover {
+  background-color: #ddd;
+  color: black !important;
+}
 /*
 ============================================================
 ============================================================
@@ -97,6 +108,9 @@ INDEX.HTML
 ============================================================
 ============================================================
 */
+main {
+  width: 100%;
+}
 .index-html-body {
   font-family: BlueberryCorporate;
   padding-top: 10%;
@@ -110,7 +124,7 @@ INDEX.HTML
 }
 .index-html-main {
   position: relative;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 .index-html-p {
@@ -126,12 +140,7 @@ INDEX.HTML
   text-align: center;
   text-decoration: none;
 }
-.index-html-header {
-  position: relative;
-  width: 87%;
-  height: auto;
-  margin: 1.5% auto;
-}
+
 /*
 ============================================================
 ============================================================
@@ -143,7 +152,7 @@ CHANGELOG.HTML
   position: relative;
   font-family: BlueberryCorporate;
   font-size: 25px;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 /*
@@ -155,7 +164,7 @@ ABOUTUS.HTML
 */
 .aboutus-html-main {
   position: relative;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
   font-family: BlueberryCorporate;
 }
@@ -168,7 +177,7 @@ CONTACTUS.HTML
 */
 .contactus-html-main {
   font-family: BlueberryCorporate;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
   font-size: 24px;
 }
@@ -186,4 +195,33 @@ QUESTIONS.HTML
 .questions-main-p {
   font-family: BlueberryCorporate;
   font-size: 25px;
+}
+/*
+============================================================
+============================================================
+PRODUCTS.HTML
+============================================================
+============================================================
+*/
+.products-html-main {
+  font-family: BlueberryCorporate;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+/*
+============================================================
+============================================================
+PHONE_CSS
+============================================================
+============================================================
+*/
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 100%;
+  }
+  header {
+    max-width: 100%;
+  }
 }

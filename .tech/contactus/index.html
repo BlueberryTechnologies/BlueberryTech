@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <!-- Sets the locale of the site -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Data/CSS/mainPage.css" />
+    <link rel="stylesheet" href="../Data/CSS/mainPage.css" />
     <!-- Sets the CSS file. This is a global file -->
-    <title>Blueberry Technologies</title>
+    <title>Blueberry Technologies - Contact</title>
     <!-- This sets the title of the website (where the tab is)-->
   </head>
 
@@ -25,30 +25,9 @@
 
   <body>
     <header>
-      <div class="banner">
-        <div class="banner-navbar">
-          <!-- Centered link -->
-          <div class="banner-navbar-centered">
-            <a href="index.html"
-              ><img class="BannerImage" src="Data/Images/banner-tech.png"
-            /></a>
-            <a href=".studios/index.html"
-              ><img
-                class="BannerImage"
-                src=".studios/Data/Images/banner-studios.png"
-            /></a>
-            <!-- Coming soon!
-            <a href="../index.html" class="active">Records</a>
-            <a href="../index.html" class="active">Auto</a>
-            <a href="../index.html" class="active">AI</a>
-            -->
-          </div>
-        </div>
-      </div>
-
-      <div class="index-html-header">
-        <a href="index.html"
-          ><img class="HeaderImage" src="Data/Images/header.png"
+      <div class="header">
+        <a href="../index.html"
+          ><img class="HeaderImage" src="../Data/Images/header.png"
         /></a>
         <div class="navbar">
           <!-- Centered link -->
@@ -59,8 +38,10 @@
           <!-- Left-aligned links (default) -->
           <a href="../aboutus/index.html">About</a>
           <a href="../contactus/index.html">Contact</a>
-          <a href="../changelog/index.html">Changelog</a>
           <a href="../questions/index.html">Q&A</a>
+          <a class="products" href="../products/index.html"
+            >Products & Services</a
+          >
 
           <!-- Right-aligned links -->
           <div class="navbar-right">
@@ -71,12 +52,12 @@
       </div>
     </header>
     <main>
-      <div class="index-html-main">
-        <p class="index-html-p">Welcome to Blueberry Technologies!</p>
-        <p class="index-html-p">Sorry, We're Under Maintenance.</p>
-        <p class="index-html-p">
-          Our team is currently working on a new and improved version of this
-          site. Check back soon!
+      <div class="contactus-html-main">
+        <h2 style="font-size: 50px">Contact Information</h2>
+        <hr />
+        <p>
+          You can email us during business hours (M-F: 9-5 EST) at
+          <a href="mailto:help@blueberry.dev">help@blueberry.dev</a>
         </p>
       </div>
     </main>
@@ -105,6 +86,7 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <p>Version a4.3 - © Copyright 2022 Blueberry Technologies</p>
+    <p>Version a4.4 - © Copyright 2022 Blueberry Technologies</p>
+    <a href="../changelog/index.html">Changelog</a>
   </footer>
 </html>

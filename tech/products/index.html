@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <!-- Sets the locale of the site -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Data/CSS/studiosCSS.css" />
+    <link rel="stylesheet" href="../Data/CSS/mainPage.css" />
     <!-- Sets the CSS file. This is a global file -->
-    <title>Blueberry Studios - Login</title>
+    <title>Blueberry Technologies - Products</title>
     <!-- This sets the title of the website (where the tab is)-->
   </head>
 
@@ -24,37 +24,26 @@
     -->
   <body>
     <header>
-      <div class="studios-banner">
-        <a href="../../.tech/index.html"
-          ><img
-            class="studios-BannerImage"
-            src="../../.tech/Data/Images/banner-tech.png"
+      <div class="header">
+        <a href="../index.html"
+          ><img class="HeaderImage" src="../Data/Images/header.png"
         /></a>
-        <!-- Coming soon!
-            <a href="../index.html" class="active">Records</a>
-            <a href="../index.html" class="active">Auto</a>
-            <a href="../index.html" class="active">AI</a>
-            -->
-      </div>
-      <div class="studios-header">
-        <a href="index.html"
-          ><img
-            class="studios-HeaderImage"
-            src="../Data/Images/studios_header.png"
-        /></a>
-        <div class="studios-navbar">
+        <div class="navbar">
           <!-- Centered link -->
-          <div class="studios-navbar-centered">
-            <a href="../index.html" class="studios-active">Home</a>
+          <div class="navbar-centered">
+            <a href="../index.html" class="active">Home</a>
           </div>
 
           <!-- Left-aligned links (default) -->
-          <a href="../games/index.html">Games</a>
+          <a href="../aboutus/index.html">About</a>
           <a href="../contactus/index.html">Contact</a>
           <a href="../questions/index.html">Q&A</a>
+          <a class="products" href="../products/index.html"
+            >Products & Services</a
+          >
 
           <!-- Right-aligned links -->
-          <div class="studios-navbar-right">
+          <div class="navbar-right">
             <a href="../login/index.html">Login</a>
             <a href="../signup/index.html">Sign Up</a>
           </div>
@@ -62,8 +51,17 @@
       </div>
     </header>
     <main>
-      <div class="studios-index-html-main">
-        <p class="studios-index-html-p">Coming soon!</p>
+      <div class="products-html-main">
+        <h2 style="font-size: 50px">Products & Services</h2>
+        <hr />
+        <a href="../../studios/index.html"
+          ><img
+            class="BannerImage"
+            src="../../studios/Data/Images/studios_para.png"
+        /></a>
+        <a href="BBTBE/index.html"
+          ><img class="BannerImage" src="../Data/Images/bbtbe_header.png"
+        /></a>
       </div>
     </main>
   </body>
@@ -91,7 +89,8 @@
         =========================================================================
         =========================================================================
     -->
-  <footer class="studios-index-html-footer">
+  <footer class="index-html-footer">
     <p>Version a4.4 - © Copyright 2022 Blueberry Technologies</p>
+    <a href="../changelog/index.html">Changelog</a>
   </footer>
 </html>

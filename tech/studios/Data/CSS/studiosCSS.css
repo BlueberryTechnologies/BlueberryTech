@@ -5,7 +5,7 @@ THIS SECTION IS FOR FONTS
 */
 @font-face {
   font-family: "BlueberryCorporate";
-  src: url(../../../.tech/Data/Fonts/CorporateFont/BlueberryDevFont_LN.otf);
+  src: url(../../../Data/Fonts/CorporateFont/BlueberryDevFont_LN.otf);
 }
 /* BROWSER RESETS */
 body {

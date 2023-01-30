@@ -1,2 +1,0 @@
-# BlueberryTech
-## Main Page

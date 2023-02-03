@@ -48,6 +48,66 @@
             <a href="../signup/index.html">Sign Up</a>
           </div>
         </div>
+        <nav class="navSidebar" id="navSidebar">
+          <div class="navSidebarClosingXContainer">
+            <span onclick="closeSidebar()" class="navSidebarClosingX">X</span>
+            <br />
+          </div>
+          <ul>
+            <a href="../aboutus/index.html">About</a>
+          </ul>
+          <ul>
+            <a href="../contactus/index.html">Contact</a>
+          </ul>
+          <ul>
+            <a href="../questions/index.html">Q&A</a>
+          </ul>
+          <ul>
+            <a class="products" href="../products/index.html"
+              >Products & Services</a
+            >
+          </ul>
+          <ul>
+            <a href="../login/index.html">Login</a>
+          </ul>
+          <ul>
+            <a href="../signup/index.html">Sign Up</a>
+          </ul>
+        </nav>
+
+        <header class="navSidebarButton" id="navSidebarButton">
+          <button class="navSidebarButton" onclick="openSidebar()">
+            <!--&#9776;-->
+            Menu
+          </button>
+        </header>
+
+        <script>
+          closeSidebar();
+          // If the menu is open, then close it when the viewport changes.
+          const mediaQuery = window.matchMedia("(min-width: 951px)");
+
+          function handleViewportChange(e) {
+            if (e.matches) {
+              closeSidebar();
+            }
+          }
+          mediaQuery.addListener(handleViewportChange);
+
+          // Initial check
+          handleViewportChange(mediaQuery);
+          function openSidebar() {
+            document.getElementById("navSidebar").style.display =
+              "inline-block";
+            document.getElementById("navSidebarButton").style.display = "none";
+          }
+
+          function closeSidebar() {
+            document.getElementById("navSidebar").style.display = "none";
+            document.getElementById("navSidebarButton").style.display =
+              "inline-block";
+          }
+        </script>
       </div>
     </header>
     <main>
@@ -80,7 +140,7 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <p>Version a4.5 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <p>Version a4.6 - © Copyright 2022 - 2023 Blueberry Technologies</p>
     <a href="../changelog/index.html">Changelog</a>
   </footer>
 </html>

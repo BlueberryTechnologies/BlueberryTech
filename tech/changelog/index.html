@@ -49,12 +49,87 @@
             <a href="../signup/index.html">Sign Up</a>
           </div>
         </div>
+        <nav class="navSidebar" id="navSidebar">
+          <div class="navSidebarClosingXContainer">
+            <span onclick="closeSidebar()" class="navSidebarClosingX">X</span>
+            <br />
+          </div>
+          <ul>
+            <a href="../aboutus/index.html">About</a>
+          </ul>
+          <ul>
+            <a href="../contactus/index.html">Contact</a>
+          </ul>
+          <ul>
+            <a href="../questions/index.html">Q&A</a>
+          </ul>
+          <ul>
+            <a class="products" href="../products/index.html"
+              >Products & Services</a
+            >
+          </ul>
+          <ul>
+            <a href="../login/index.html">Login</a>
+          </ul>
+          <ul>
+            <a href="../signup/index.html">Sign Up</a>
+          </ul>
+        </nav>
+
+        <header class="navSidebarButton" id="navSidebarButton">
+          <button class="navSidebarButton" onclick="openSidebar()">
+            <!--&#9776;-->
+            Menu
+          </button>
+        </header>
+
+        <script>
+          closeSidebar();
+          // If the menu is open, then close it when the viewport changes.
+          const mediaQuery = window.matchMedia("(min-width: 951px)");
+
+          function handleViewportChange(e) {
+            if (e.matches) {
+              closeSidebar();
+            }
+          }
+          mediaQuery.addListener(handleViewportChange);
+
+          // Initial check
+          handleViewportChange(mediaQuery);
+          function openSidebar() {
+            document.getElementById("navSidebar").style.display =
+              "inline-block";
+            document.getElementById("navSidebarButton").style.display = "none";
+          }
+
+          function closeSidebar() {
+            document.getElementById("navSidebar").style.display = "none";
+            document.getElementById("navSidebarButton").style.display =
+              "inline-block";
+          }
+        </script>
       </div>
     </header>
     <main>
       <div class="changelog-html-main">
         <h1 id="Changelog">Website Changelog</h1>
         <hr />
+        <div>
+          <h2>02/01/22 - Version a4.6</h2>
+          <p>
+            - Added Mobile Support! (Initial tech site is compatible first,
+            studios is coming in a later push of the same version.
+          </p>
+          <p>- Added readme</p>
+          <p>- Removed Typed.js</p>
+          <p>
+            - Removed Blueberry-Tech-Barcode-Editor.jar file from website. Only
+            download through GitHub for now.
+          </p>
+          <p>- Changed name of BBTBE folder to barcode-editor</p>
+          <p>- Added release of the barcode editor on the main page as news</p>
+        </div>
         <div>
           <h2>01/24/22 - Version a4.5</h2>
           <p>- Added the Blueberry Tech Barcode Editor</p>
@@ -202,6 +277,6 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <p>Version a4.5 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <p>Version a4.6 - © Copyright 2022 - 2023 Blueberry Technologies</p>
   </footer>
 </html>

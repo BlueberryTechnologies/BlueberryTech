@@ -83,6 +83,18 @@
 
         <script>
           closeSidebar();
+          // If the menu is open, then close it when the viewport changes.
+          const mediaQuery = window.matchMedia("(min-width: 951px)");
+
+          function handleViewportChange(e) {
+            if (e.matches) {
+              closeSidebar();
+            }
+          }
+          mediaQuery.addListener(handleViewportChange);
+
+          // Initial check
+          handleViewportChange(mediaQuery);
           function openSidebar() {
             document.getElementById("navSidebar").style.display =
               "inline-block";
@@ -101,6 +113,15 @@
       <div class="index-html-main">
         <p class="index-html-p-title">Latest News</p>
         <hr />
+        <!-- News #2 -->
+        <p class="index-html-p-date">
+          01/20/2022 - Blueberry Technologies Barcode Editor Released!
+        </p>
+        <p class="index-html-p-desc">
+          > Check out our new printing program
+          <a href="products/barcode-editor/index.html">here!</a>
+        </p>
+        <!-- END OF NEWS #2-->
         <!-- News #1 -->
         <p class="index-html-p-date">12/12/2022 - Site Launched!</p>
         <p class="index-html-p-desc">> We've officially launched!</p>
@@ -132,7 +153,7 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <p>Version a4.5 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <p>Version a4.6 - © Copyright 2022 - 2023 Blueberry Technologies</p>
     <a href="changelog/index.html">Changelog</a>
   </footer>
 </html>

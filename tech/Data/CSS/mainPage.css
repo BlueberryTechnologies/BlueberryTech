@@ -7,7 +7,7 @@ THIS SECTION IS FOR FONTS
   font-family: "BlueberryCorporate";
   src: url(../Fonts/CorporateFont/BlueberryDevFont_LN.otf);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .left,
   .main,
   .right {
@@ -19,7 +19,20 @@ THIS SECTION IS FOR FONTS
   .navbar {
     display: none;
   }
-  .navSidebar,
+  .navSidebar {
+    width: 100%;
+  }
+  .navSidebar a {
+    color: white;
+    text-decoration: none;
+  }
+  .navSidebarClosingXContainer {
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: BlueberryCorporate;
+    font-size: 5vh;
+  }
   .navSidebarButton {
     width: 100%;
   }
@@ -31,14 +44,16 @@ THIS SECTION IS FOR FONTS
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
   .HeaderImage {
     width: 100%;
   }
 }
-@media screen and (min-width: 901px) {
-  .navSidebar,
+@media screen and (min-width: 951px) {
+  .navSidebar {
+    display: none;
+  }
   .navSidebarButton {
     display: none;
   }

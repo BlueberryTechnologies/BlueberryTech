@@ -28,6 +28,11 @@
         <a href="../../index.html"
           ><img class="HeaderImage" src="../../Data/Images/header.png"
         /></a>
+        <a href="../../index.html"
+          ><img
+            class="HeaderImage-Mobile"
+            src="../../Data/Images/banner-tech-mobile.png"
+        /></a>
         <div class="navbar">
           <!-- Centered link -->
           <div class="navbar-centered">
@@ -48,6 +53,66 @@
             <a href="../../signup/index.html">Sign Up</a>
           </div>
         </div>
+        <nav class="navSidebar" id="navSidebar">
+          <div class="navSidebarClosingXContainer">
+            <span onclick="closeSidebar()" class="navSidebarClosingX">X</span>
+            <br />
+          </div>
+          <ul>
+            <a href="aboutus/index.html">About</a>
+          </ul>
+          <ul>
+            <a href="contactus/index.html">Contact</a>
+          </ul>
+          <ul>
+            <a href="questions/index.html">Q&A</a>
+          </ul>
+          <ul>
+            <a class="products" href="products/index.html"
+              >Products & Services</a
+            >
+          </ul>
+          <ul>
+            <a href="login/index.html">Login</a>
+          </ul>
+          <ul>
+            <a href="signup/index.html">Sign Up</a>
+          </ul>
+        </nav>
+
+        <header class="navSidebarButton" id="navSidebarButton">
+          <button class="navSidebarButton" onclick="openSidebar()">
+            <!--&#9776;-->
+            Menu
+          </button>
+        </header>
+
+        <script>
+          closeSidebar();
+          // If the menu is open, then close it when the viewport changes.
+          const mediaQuery = window.matchMedia("(min-width: 951px)");
+
+          function handleViewportChange(e) {
+            if (e.matches) {
+              closeSidebar();
+            }
+          }
+          mediaQuery.addListener(handleViewportChange);
+
+          // Initial check
+          handleViewportChange(mediaQuery);
+          function openSidebar() {
+            document.getElementById("navSidebar").style.display =
+              "inline-block";
+            document.getElementById("navSidebarButton").style.display = "none";
+          }
+
+          function closeSidebar() {
+            document.getElementById("navSidebar").style.display = "none";
+            document.getElementById("navSidebarButton").style.display =
+              "inline-block";
+          }
+        </script>
       </div>
     </header>
     <main>
@@ -64,7 +129,7 @@
             >here,</a
           >
           <br />
-          The latest version is: 1.0.5.
+          The latest version is: 1.0.6.
         </p>
         <hr />
         <h1 id="Documentation">Documentation</h1>
@@ -93,8 +158,8 @@
         <hr />
         <h3 id="Configuration">Configuration</h3>
         <p>
-          To get started you will need to have a printer configured on your
-          computer.
+          To get started you will need to have a printer or printers configured
+          on your computer.
         </p>
         <p>
           This could be a wireless or wired network printer, or a wired printer.
@@ -102,16 +167,19 @@
         <p>
           Once a printer is setup on your device, the program should
           automatically recognize it and it will be available to print.
-          <b>ONLY ONE PRINTER IS AVAILABLE, PRINTER SELECTOR COMING SOON</b>
         </p>
         <p>
           You are able to change the path the program looks for generated codes.
-          In<b> Menu > Printer Settings</b> you are able to change to a custom
-          path, or revert back to default.
+          In<b> Settings > Change Code Directory</b> you are able to change to a
+          custom path, or revert back to default.
         </p>
         <p>
           If you have issues selecting a directory, please make sure the
           selected directory is not read only.
+        </p>
+        <p>
+          You can also change the printer used in
+          <b>Settings > Select Printer</b>.
         </p>
       </div>
     </main>
@@ -129,7 +197,7 @@
         =========================================================================
         -->
   <footer class="index-html-footer">
-    <p>Version a4.5 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <p>Version a4.6 - © Copyright 2022 - 2023 Blueberry Technologies</p>
     <a href="../../changelog/index.html">Changelog</a>
   </footer>
 </html>

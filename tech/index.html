@@ -29,6 +29,11 @@
         <a href="index.html"
           ><img class="HeaderImage" src="Data/Images/header.png"
         /></a>
+        <a href="index.html"
+          ><img
+            class="HeaderImage-Mobile"
+            src="Data/Images/banner-tech-mobile.png"
+        /></a>
         <div class="navbar">
           <!-- Centered link -->
           <div class="navbar-centered">
@@ -83,6 +88,18 @@
 
         <script>
           closeSidebar();
+          // If the menu is open, then close it when the viewport changes.
+          const mediaQuery = window.matchMedia("(min-width: 951px)");
+
+          function handleViewportChange(e) {
+            if (e.matches) {
+              closeSidebar();
+            }
+          }
+          mediaQuery.addListener(handleViewportChange);
+
+          // Initial check
+          handleViewportChange(mediaQuery);
           function openSidebar() {
             document.getElementById("navSidebar").style.display =
               "inline-block";
@@ -101,6 +118,21 @@
       <div class="index-html-main">
         <p class="index-html-p-title">Latest News</p>
         <hr />
+        <!-- News #3 -->
+        <p class="index-html-p-date">02/4/2023 - Official Mobile Support!</p>
+        <p class="index-html-p-desc">
+          > Now you can view our website on mobile devices!
+        </p>
+        <!-- END OF NEWS #3-->
+        <!-- News #2 -->
+        <p class="index-html-p-date">
+          01/20/2022 - Blueberry Technologies Barcode Editor Released!
+        </p>
+        <p class="index-html-p-desc">
+          > Check out our new printing program
+          <a href="products/barcode-editor/index.html">here!</a>
+        </p>
+        <!-- END OF NEWS #2-->
         <!-- News #1 -->
         <p class="index-html-p-date">12/12/2022 - Site Launched!</p>
         <p class="index-html-p-desc">> We've officially launched!</p>
@@ -132,7 +164,7 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <p>Version a4.5 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <p>Version a4.6 - © Copyright 2022 - 2023 Blueberry Technologies</p>
     <a href="changelog/index.html">Changelog</a>
   </footer>
 </html>

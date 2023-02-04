@@ -29,6 +29,7 @@
         <a href="../index.html"
           ><img class="BannerImage" src="../Data/Images/banner-tech.png"
         /></a>
+
         <!-- Coming soon!
             <a href="../index.html" class="active">Records</a>
             <a href="../index.html" class="active">Auto</a>
@@ -39,8 +40,13 @@
       <div class="studios-header">
         <a href="index.html"
           ><img
-            class="studios-HeaderImage"
+            class="Studios-HeaderImage"
             src="Data/Images/studios_header.png"
+        /></a>
+        <a href="index.html"
+          ><img
+            class="Studios-HeaderImage-Mobile"
+            src="Data/Images/banner-studios-mobile.png"
         /></a>
         <div class="studios-navbar">
           <!-- Centered link -->
@@ -59,6 +65,61 @@
             <a href="signup/index.html">Sign Up</a>
           </div>
         </div>
+        <nav class="navSidebar" id="navSidebar">
+          <div class="navSidebarClosingXContainer">
+            <span onclick="closeSidebar()" class="navSidebarClosingX">X</span>
+            <br />
+          </div>
+          <ul>
+            <a href="games/index.html">Games</a>
+          </ul>
+          <ul>
+            <a href="contactus/index.html">Contact</a>
+          </ul>
+          <ul>
+            <a href="questions/index.html">Q&A</a>
+          </ul>
+          <ul>
+            <a href="login/index.html">Login</a>
+          </ul>
+          <ul>
+            <a href="signup/index.html">Sign Up</a>
+          </ul>
+        </nav>
+
+        <header class="navSidebarButton" id="navSidebarButton">
+          <button class="navSidebarButton" onclick="openSidebar()">
+            <!--&#9776;-->
+            Menu
+          </button>
+        </header>
+
+        <script>
+          closeSidebar();
+          // If the menu is open, then close it when the viewport changes.
+          const mediaQuery = window.matchMedia("(min-width: 1101px)");
+
+          function handleViewportChange(e) {
+            if (e.matches) {
+              closeSidebar();
+            }
+          }
+          mediaQuery.addListener(handleViewportChange);
+
+          // Initial check
+          handleViewportChange(mediaQuery);
+          function openSidebar() {
+            document.getElementById("navSidebar").style.display =
+              "inline-block";
+            document.getElementById("navSidebarButton").style.display = "none";
+          }
+
+          function closeSidebar() {
+            document.getElementById("navSidebar").style.display = "none";
+            document.getElementById("navSidebarButton").style.display =
+              "inline-block";
+          }
+        </script>
       </div>
     </header>
     <main>
@@ -96,6 +157,6 @@
         =========================================================================
     -->
   <footer class="studios-index-html-footer">
-    <p>Version a4.5 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <p>Version a4.6 - © Copyright 2022 - 2023 Blueberry Technologies</p>
   </footer>
 </html>

@@ -8,6 +8,18 @@ THIS SECTION IS FOR FONTS
   src: url(../Fonts/CorporateFont/BlueberryDevFont_LN.otf);
 }
 @media screen and (max-width: 950px) {
+  .HeaderImage-Mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .header {
+    width: 100%;
+  }
+  .HeaderImage {
+    display: none;
+  }
   .left,
   .main,
   .right {
@@ -20,7 +32,9 @@ THIS SECTION IS FOR FONTS
     display: none;
   }
   .navSidebar {
-    width: 100%;
+    width: 50%;
+    border-radius: 12px;
+    background-color: #333;
   }
   .navSidebar a {
     color: white;
@@ -45,17 +59,59 @@ THIS SECTION IS FOR FONTS
     text-decoration: none;
     display: inline-block;
     font-size: 3.5vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
   }
-  .HeaderImage {
-    width: 100%;
+  .BannerImage {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .Employee-Image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 @media screen and (min-width: 951px) {
+  .HeaderImage-Mobile {
+    display: none;
+  }
   .navSidebar {
     display: none;
   }
   .navSidebarButton {
     display: none;
+  }
+  .HeaderImage {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    width: 100%;
+  }
+  .left,
+  .main,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .Employee-Image {
+    display: block;
+    width: auto;
+    height: auto;
+    width: 10%;
+    height: 10%;
   }
 }
 /* BROWSER RESETS */
@@ -71,20 +127,9 @@ THIS SECTION IS FOR THE HEAD, HEADER, AND NAVBARS
 */
 
 /* Mobile Navbar */
-.navSidebar {
-  position: relative;
-  background-color: #333;
-  overflow: hidden;
-  border-radius: 12px;
-}
 
 /* Header */
-.HeaderImage {
-  max-width: 100%;
-  max-height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .BannerImage-BBTBE {
   max-width: 100%;
   max-height: 100%;

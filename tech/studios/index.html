@@ -29,6 +29,7 @@
         <a href="../index.html"
           ><img class="BannerImage" src="../Data/Images/banner-tech.png"
         /></a>
+
         <!-- Coming soon!
             <a href="../index.html" class="active">Records</a>
             <a href="../index.html" class="active">Auto</a>
@@ -39,8 +40,13 @@
       <div class="studios-header">
         <a href="index.html"
           ><img
-            class="studios-HeaderImage"
+            class="Studios-HeaderImage"
             src="Data/Images/studios_header.png"
+        /></a>
+        <a href="index.html"
+          ><img
+            class="Studios-HeaderImage-Mobile"
+            src="Data/Images/banner-studios-mobile.png"
         /></a>
         <div class="studios-navbar">
           <!-- Centered link -->
@@ -65,18 +71,13 @@
             <br />
           </div>
           <ul>
-            <a href="aboutus/index.html">About</a>
+            <a href="games/index.html">Games</a>
           </ul>
           <ul>
             <a href="contactus/index.html">Contact</a>
           </ul>
           <ul>
             <a href="questions/index.html">Q&A</a>
-          </ul>
-          <ul>
-            <a class="products" href="products/index.html"
-              >Products & Services</a
-            >
           </ul>
           <ul>
             <a href="login/index.html">Login</a>
@@ -96,7 +97,7 @@
         <script>
           closeSidebar();
           // If the menu is open, then close it when the viewport changes.
-          const mediaQuery = window.matchMedia("(min-width: 951px)");
+          const mediaQuery = window.matchMedia("(min-width: 1101px)");
 
           function handleViewportChange(e) {
             if (e.matches) {

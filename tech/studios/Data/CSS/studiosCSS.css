@@ -7,6 +7,108 @@ THIS SECTION IS FOR FONTS
   font-family: "BlueberryCorporate";
   src: url(../../../Data/Fonts/CorporateFont/BlueberryDevFont_LN.otf);
 }
+@media screen and (max-width: 1100px) {
+  .Studios-HeaderImage-Mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .studios-header {
+    width: 100%;
+  }
+  .Studios-HeaderImage {
+    display: none;
+  }
+  .left,
+  .main,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  body {
+    width: 100%;
+  }
+  .studios-navbar {
+    display: none;
+  }
+  .navSidebar {
+    width: 50%;
+    border-radius: 12px;
+    background-color: #333;
+  }
+  .navSidebar a {
+    color: white;
+    text-decoration: none;
+  }
+  .navSidebarClosingXContainer {
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: BlueberryCorporate;
+    font-size: 5vh;
+  }
+  .navSidebarButton {
+    width: 100%;
+  }
+  .navSidebarButton {
+    color: white;
+    background-color: #333;
+    border: none;
+    padding: 15px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3.5vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .BannerImage {
+    width: 30%;
+  }
+  .Employee-Image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .Studios-HeaderImage-Mobile {
+    display: none;
+  }
+  .navSidebar {
+    display: none;
+  }
+  .navSidebarButton {
+    display: none;
+  }
+  .Studios-HeaderImage {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .left,
+  .main,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .Employee-Image {
+    display: block;
+    width: auto;
+    height: auto;
+    width: 10%;
+    height: 10%;
+  }
+}
 /* BROWSER RESETS */
 body {
   margin-top: 0;
@@ -18,14 +120,6 @@ body {
   ============================================================
   ============================================================
   */
-
-.studios-HeaderImage {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
 header {
   width: 100%;
 }

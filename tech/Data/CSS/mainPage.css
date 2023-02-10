@@ -294,6 +294,20 @@ ABOUTUS.HTML
   margin: 0 auto;
   font-family: BlueberryCorporate;
 }
+.Employee-Name {
+  font-size: 1.6em;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 2px;
+}
+.Employee-Email {
+  font-size: 1.2em;
+  margin-top: 0px;
+}
+.Employee-Email a {
+  text-decoration: none;
+}
 /*
 ============================================================
 ============================================================

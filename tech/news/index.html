@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Data/CSS/mainPage.css" />
     <!-- Sets the CSS file. This is a global file -->
-    <title>Blueberry Technologies - Signup</title>
+    <title>Blueberry Technologies</title>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
     <!-- This sets the title of the website (where the tab is)-->
   </head>
 
@@ -22,6 +26,7 @@
         =========================================================================
         =========================================================================
     -->
+
   <body>
     <header>
       <div class="header">
@@ -40,15 +45,14 @@
           </div>
 
           <!-- Left-aligned links (default) -->
-          <a href="../aboutus/">About</a>
-          <a href="../contactus/">Contact</a>
-          <a href="../questions/">Q&A</a>
-          <a class="products" href="../products/">Products & Services</a>
+          <a href="../aboutus">About</a>
+          <a href="../contactus">Contact</a>
+          <a href="../questions">Q&A</a>
+          <a href="../news">News & Updates</a>
 
           <!-- Right-aligned links -->
           <div class="navbar-right">
-            <a href="../login/">Login</a>
-            <a href="../signup/">Sign Up</a>
+            <a class="products" href="../products">Products & Services</a>
           </div>
         </div>
         <nav class="navSidebar" id="navSidebar">
@@ -66,13 +70,10 @@
             <a href="../questions/">Q&A</a>
           </ul>
           <ul>
+            <a href="../news/">News & Updates</a>
+          </ul>
+          <ul>
             <a class="products" href="../products/">Products & Services</a>
-          </ul>
-          <ul>
-            <a href="../login/">Login</a>
-          </ul>
-          <ul>
-            <a href="../signup/">Sign Up</a>
           </ul>
         </nav>
 
@@ -113,7 +114,8 @@
     </header>
     <main>
       <div class="index-html-main">
-        <p class="index-html-p">Coming soon!</p>
+        <zero-md
+          src="https://raw.githubusercontent.com/BlueberryTechnologies/Blueberry-Tech-Barcode-Editor/main/news.md"></zero-md>
       </div>
     </main>
   </body>
@@ -141,7 +143,7 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <p>Version a4.6 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <p>Version a4.7 - © Copyright 2022 - 2023 Blueberry Technologies</p>
     <a href="../changelog/">Changelog</a>
   </footer>
 </html>

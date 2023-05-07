@@ -1,5 +1,8 @@
 # Latest News
 
+### 5/6/23 - Added Blueberry Builds!
+
+- If you're in the market for a new custom gaming pc, head on over to Blueberry Builds on the products page!
 
 ### 03/19/2023 - Added dedicated news page!
 

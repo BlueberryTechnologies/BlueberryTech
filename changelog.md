@@ -1,5 +1,10 @@
 # Website Changelog
 
+### 5/6/23 - Version a4.7.2
+
+- Added Blueberry Builds page.
+  - Now you can submit a Custom PC Build Request!
+
 ### 03/19/23 - Version a4.7
 
 - Added easier way to modify changelog and news pages.

@@ -20,6 +20,12 @@ THIS SECTION IS FOR FONTS
   .HeaderImage {
     display: none;
   }
+  .PC-Form-Mobile {
+    display: block;
+  }
+  .PC-Form-Desktop {
+    display: none;
+  }
   .left,
   .main,
   .right {
@@ -80,6 +86,12 @@ THIS SECTION IS FOR FONTS
 }
 @media screen and (min-width: 951px) {
   .HeaderImage-Mobile {
+    display: none;
+  }
+  .PC-Form-Desktop {
+    display: block;
+  }
+  .PC-Form-Mobile {
     display: none;
   }
   .navSidebar {
@@ -364,4 +376,41 @@ PHONE_CSS
   header {
     max-width: 100%;
   }
+}
+/*
+============================================================
+============================================================
+PC BUILDS
+============================================================
+============================================================
+*/
+.PC-Client-Header-Name {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  margin: 0;
+  margin-top: 20px;
+  margin-right: 5px;
+  color: black;
+}
+.PC-Client-Header-Name a {
+  text-decoration: none;
+  color: black;
+}
+.PC-Client-Desc {
+  margin-top: 5px;
+  font-size: 1em;
+}
+.PC-Client-Desc ul {
+  list-style-type: none;
+}
+.PC-Client-Desc ul li::before {
+  content: attr(data-icon);
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: bold;
+}
+.Example-PC-Images {
+  max-width: 100%;
+  height: auto;
 }

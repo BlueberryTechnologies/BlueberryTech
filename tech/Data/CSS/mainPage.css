@@ -307,6 +307,7 @@ ABOUTUS.HTML
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 2px;
+  color: black;
 }
 .Employee-Email {
   font-size: 1.2em;
@@ -314,10 +315,14 @@ ABOUTUS.HTML
 }
 .Employee-Email a {
   text-decoration: none;
+  color: blue;
 }
 
 div.gallery {
   border: 1px solid #ccc;
+}
+.gallery a {
+  text-decoration: none;
 }
 
 div.gallery:hover {

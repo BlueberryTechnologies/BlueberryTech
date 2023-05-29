@@ -1,5 +1,10 @@
 # Website Changelog
 
+### 5/28/23 - Version a4.7.3
+
+- Updated CSS for About page.
+  - Changed how the staff is presented on the about us page, also allowedt the options for each staff member to have a selected link that their picture redirects to.
+
 ### 5/6/23 - Version a4.7.2
 
 - Added Blueberry Builds page.

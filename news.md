@@ -1,5 +1,9 @@
 # Latest News
 
+### 5/28/23 - Changed the layout of the About Page.
+
+- Changed how the users are aligned on the [about](https://blueberry.dev/aboutus/) page.
+
 ### 5/6/23 - Added Blueberry Builds!
 
 - If you're in the market for a new custom gaming pc, head on over to Blueberry Builds on the products page!

@@ -82,6 +82,8 @@ THIS SECTION IS FOR FONTS
     height: auto;
     max-width: 100%;
     max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
   }
 }
 @media screen and (min-width: 951px) {
@@ -117,13 +119,6 @@ THIS SECTION IS FOR FONTS
   .main,
   .right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-  .Employee-Image {
-    display: block;
-    width: auto;
-    height: auto;
-    width: 10%;
-    height: 10%;
   }
 }
 /* BROWSER RESETS */
@@ -319,6 +314,59 @@ ABOUTUS.HTML
 }
 .Employee-Email a {
   text-decoration: none;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+}
+.Employee-Image {
+  width: auto;
+  float: left;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 30%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /*
 ============================================================

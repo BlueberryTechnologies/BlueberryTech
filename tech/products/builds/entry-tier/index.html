@@ -1,0 +1,212 @@
+<!-- Blueberry Tech - Last Update: 221208 - riley -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Sets the locale of the site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../Data/CSS/mainPage.css" />
+    <!-- Sets the CSS file. This is a global file -->
+    <title>Blueberry Technologies - Entry Level Configurator</title>
+    <!-- This sets the title of the website (where the tab is)-->
+  </head>
+
+  <!--
+        =========================================================================
+        =========================================================================
+        =========================================================================
+
+        THE END OF THE HEAD SECTION (SHOULD BE THE SAME FOR ALL THE PAGES)
+
+        =========================================================================
+        =========================================================================
+        =========================================================================
+    -->
+  <body>
+    <header>
+      <div class="header">
+        <a href="../../../"
+          ><img class="HeaderImage" src="../../../Data/Images/header.png"
+        /></a>
+        <a href="../../../"
+          ><img
+            class="HeaderImage-Mobile"
+            src="../../../Data/Images/banner-tech-mobile.png"
+        /></a>
+        <div class="navbar">
+          <!-- Centered link -->
+          <div class="navbar-centered">
+            <a href="../../../" class="active">Home</a>
+          </div>
+
+          <!-- Left-aligned links (default) -->
+          <a href="../../../aboutus">About</a>
+          <a href="../../../contactus">Contact</a>
+          <a href="../../../questions">Q&A</a>
+          <a href="../../../news">News & Updates</a>
+
+          <!-- Right-aligned links -->
+          <div class="navbar-right">
+            <a class="products" href="../../../products">Products & Services</a>
+          </div>
+        </div>
+        <nav class="navSidebar" id="navSidebar">
+          <div class="navSidebarClosingXContainer">
+            <span onclick="closeSidebar()" class="navSidebarClosingX">X</span>
+            <br />
+          </div>
+          <ul>
+            <a href="../../../aboutus/">About</a>
+          </ul>
+          <ul>
+            <a href="../../../contactus/">Contact</a>
+          </ul>
+          <ul>
+            <a href="../../../questions/">Q&A</a>
+          </ul>
+          <ul>
+            <a href="../../../news/">News & Updates</a>
+          </ul>
+          <ul>
+            <a class="products" href="../../../products/"
+              >Products & Services</a
+            >
+          </ul>
+        </nav>
+
+        <header class="navSidebarButton" id="navSidebarButton">
+          <button class="navSidebarButton" onclick="openSidebar()">
+            <!--&#9776;-->
+            Menu
+          </button>
+        </header>
+
+        <script>
+          closeSidebar();
+          // If the menu is open, then close it when the viewport changes.
+          const mediaQuery = window.matchMedia("(min-width: 951px)");
+
+          function handleViewportChange(e) {
+            if (e.matches) {
+              closeSidebar();
+            }
+          }
+          mediaQuery.addListener(handleViewportChange);
+
+          // Initial check
+          handleViewportChange(mediaQuery);
+          function openSidebar() {
+            document.getElementById("navSidebar").style.display =
+              "inline-block";
+            document.getElementById("navSidebarButton").style.display = "none";
+          }
+
+          function closeSidebar() {
+            document.getElementById("navSidebar").style.display = "none";
+            document.getElementById("navSidebarButton").style.display =
+              "inline-block";
+          }
+        </script>
+      </div>
+    </header>
+
+    <!-- BEGINNING OF THE BODY -->
+
+    <main>
+      <div class="products-html-main">
+        <img
+          class="BannerImage-BBTBE"
+          src="../../../Data/Images/blueberry_builder.png" />
+        <hr />
+        <h1 class="QuickBuilds-Header">Entry Level Gaming PC</h1>
+
+        <div class="QuickBuilds">
+          <div class="QuickBuild-Container-PC">
+            <div class="gallery" text-decorations="none">
+              <div class="desc">
+                <h3 class="QuickBuild-Name">AMD<br />Entry Level Gaming PC</h3>
+                <hr />
+                <div class="QuickBuild-Desc">
+                  <ul role="list">
+                    <li>Ryzen 5 5600G</li>
+                    <li>ASRock B550 Phantom Gaming</li>
+                    <li>TEAMGROUP 16GB 3200</li>
+                    <li>Crucial P3 1TB</li>
+                    <li>Fractal Design Pop Air</li>
+                    <li>Corsair CX650M</li>
+                    <li>Windows 11 Home</li>
+                  </ul>
+                  <p class="PCPartPicker-Link">
+                    You can view the PCPartPicker for this build
+                    <a
+                      target="_blank"
+                      href="https://pcpartpicker.com/user/JoystickPlays/saved/4Nnw3C"
+                      >here</a
+                    >.
+                  </p>
+                </div>
+                <p class="QuickBuild-Buy">
+                  <a href="https://buy.stripe.com/4gw8xa5a64QJ6Nq9AB"
+                    >Buy Now</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="QuickBuild-Container-PC">
+            <div class="gallery" text-decorations="none">
+              <div class="desc">
+                <h3 class="QuickBuild-Name">
+                  AMD + NVIDIA<br />Entry Level Gaming PC
+                </h3>
+                <hr />
+                <div class="QuickBuild-Desc">
+                  <ul role="list">
+                    <li>Ryzen 5 5600</li>
+                    <li>ASRock B550 Phantom Gaming</li>
+                    <li>Corsair Vengeance 16GB 3600</li>
+                    <li>Samsung 970 EVO 1TB</li>
+                    <li>Seagate Barracuda 2TB</li>
+                    <li>MSI GeForce RTX 3060 Ventus 12GB</li>
+                    <li>Fractal Design Pop Air</li>
+                    <li>Corsair CX750M</li>
+                    <li>Windows 11 Home</li>
+                  </ul>
+                  <p class="PCPartPicker-Link">
+                    You can view the PCPartPicker for this build
+                    <a
+                      target="_blank"
+                      href="https://pcpartpicker.com/user/JoystickPlays/saved/8ZxtCJ"
+                      >here</a
+                    >.
+                  </p>
+                </div>
+                <p class="QuickBuild-Buy">
+                  <a href="https://buy.stripe.com/fZeaFi31Y1ExdbO28a"
+                    >Buy Now</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <!--
+        =========================================================================
+        =========================================================================
+        =========================================================================
+
+        THE START OF THE FOOTER SECTION (SHOULD BE THE SAME FOR ALL THE PAGES)
+
+        =========================================================================
+        =========================================================================
+        =========================================================================
+        -->
+  <footer class="index-html-footer">
+    <p>Version a4.7.4 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <a href="../../../changelog/">Changelog</a>
+  </footer>
+</html>

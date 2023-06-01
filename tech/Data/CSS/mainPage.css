@@ -386,9 +386,10 @@ div.desc {
   color: red;
 }
 .QuickBuild-Container-PC {
-  padding: auto;
+  padding-left: 15px;
   float: left;
   width: 30%;
+  
 }
 /*
 ============================================================
@@ -483,4 +484,12 @@ PC BUILDS
 .Example-PC-Images {
   max-width: 100%;
   height: auto;
+}
+
+/*Should take care of mobile platforms*/
+@media (max-width: 1000px){
+.QuickBuild-Container-PC {
+  width: fit-content;
+  padding-bottom: 10px;
+}
 }

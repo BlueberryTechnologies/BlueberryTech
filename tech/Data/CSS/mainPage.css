@@ -8,86 +8,12 @@ THIS SECTION IS FOR FONTS
   src: url(../Fonts/CorporateFont/BlueberryDevFont_LN.otf);
 }
 @media screen and (max-width: 950px) {
-  .HeaderImage-Mobile {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-  .header {
-    width: 100%;
-  }
-  .HeaderImage {
+  .Desktop-Container {
     display: none;
-  }
-  .PC-Form-Mobile {
-    display: block;
-  }
-  .PC-Form-Desktop {
-    display: none;
-  }
-  .left,
-  .main,
-  .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-  body {
-    width: 100%;
-  }
-  .navbar {
-    display: none;
-  }
-  .navSidebar {
-    width: 50%;
-    border-radius: 12px;
-    background-color: #333;
-  }
-  .navSidebar a {
-    color: white;
-    text-decoration: none;
-  }
-  .navSidebarClosingXContainer {
-    color: white;
-    margin-left: 10px;
-    margin-top: 5px;
-    font-family: BlueberryCorporate;
-    font-size: 5vh;
-  }
-  .navSidebarButton {
-    width: 100%;
-  }
-  .navSidebarButton {
-    color: white;
-    background-color: #333;
-    border: none;
-    padding: 15px 1px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 3.5vw;
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-  }
-  .BannerImage {
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .Employee-Image {
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    min-height: 100%;
   }
 }
 @media screen and (min-width: 951px) {
-  .HeaderImage-Mobile {
+  .Mobile-Container {
     display: none;
   }
   .PC-Form-Desktop {
@@ -96,12 +22,7 @@ THIS SECTION IS FOR FONTS
   .PC-Form-Mobile {
     display: none;
   }
-  .navSidebar {
-    display: none;
-  }
-  .navSidebarButton {
-    display: none;
-  }
+
   .HeaderImage {
     display: block;
     width: auto;
@@ -144,12 +65,25 @@ THIS SECTION IS FOR THE HEAD, HEADER, AND NAVBARS
   margin-right: auto;
   margin-top: 10px;
 }
-header {
-  width: 100%;
+.BannerImage {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.Employee-Image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /* Navbar */
-.header {
+.Desktop-Container {
   position: relative;
   width: 80%;
   height: auto;
@@ -389,7 +323,6 @@ div.desc {
   padding-left: 15px;
   float: left;
   width: 30%;
-  
 }
 /*
 ============================================================
@@ -487,9 +420,15 @@ PC BUILDS
 }
 
 /*Should take care of mobile platforms*/
-@media (max-width: 1000px){
-.QuickBuild-Container-PC {
-  width: fit-content;
-  padding-bottom: 10px;
+@media (max-width: 1000px) {
+  .QuickBuild-Container-PC {
+    width: fit-content;
+    padding-bottom: 10px;
+  }
 }
+
+/*
+This is for the new Mobile Site
+*/
+@media (max-width: 900px) {
 }

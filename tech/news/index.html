@@ -6,6 +6,7 @@
     <!-- Sets the locale of the site -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Data/CSS/mainPage.css" />
+    <link rel="stylesheet" href="../Data/CSS/mobileCss.css" />
     <!-- Sets the CSS file. This is a global file -->
     <title>Blueberry Technologies</title>
 
@@ -29,14 +30,28 @@
 
   <body>
     <header>
-      <div class="header">
+      <div class="Mobile-Container">
+        <div class="Mobile-Header" id="Mobile-Header">
+          <a href="../" class="active"
+            ><img class="Logo-Image" src="../Data/Images/logotransparent.png"
+          /></a>
+          <div id="Nav-Links">
+            <a href="../aboutus/">About</a>
+            <a href="../contactus/">Contact</a>
+            <a href="../questions/">Q&A</a>
+            <a href="../news/">News & Updates</a>
+            <a class="products/" href="../products">Products & Services</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
+            ☰
+          </a>
+        </div>
+
+        <!-- End of header. -->
+      </div>
+      <div class="Desktop-Container">
         <a href="../"
           ><img class="HeaderImage" src="../Data/Images/header.png"
-        /></a>
-        <a href="../"
-          ><img
-            class="HeaderImage-Mobile"
-            src="../Data/Images/banner-tech-mobile.png"
         /></a>
         <div class="navbar">
           <!-- Centered link -->
@@ -45,71 +60,16 @@
           </div>
 
           <!-- Left-aligned links (default) -->
-          <a href="../aboutus">About</a>
-          <a href="../contactus">Contact</a>
-          <a href="../questions">Q&A</a>
-          <a href="../news">News & Updates</a>
+          <a href="../aboutus/">About</a>
+          <a href="../contactus/">Contact</a>
+          <a href="../questions/">Q&A</a>
+          <a href="../news/">News & Updates</a>
 
           <!-- Right-aligned links -->
           <div class="navbar-right">
-            <a class="products" href="../products">Products & Services</a>
+            <a class="products" href="../products/">Products & Services</a>
           </div>
         </div>
-        <nav class="navSidebar" id="navSidebar">
-          <div class="navSidebarClosingXContainer">
-            <span onclick="closeSidebar()" class="navSidebarClosingX">X</span>
-            <br />
-          </div>
-          <ul>
-            <a href="../aboutus/">About</a>
-          </ul>
-          <ul>
-            <a href="../contactus/">Contact</a>
-          </ul>
-          <ul>
-            <a href="../questions/">Q&A</a>
-          </ul>
-          <ul>
-            <a href="../news/">News & Updates</a>
-          </ul>
-          <ul>
-            <a class="products" href="../products/">Products & Services</a>
-          </ul>
-        </nav>
-
-        <header class="navSidebarButton" id="navSidebarButton">
-          <button class="navSidebarButton" onclick="openSidebar()">
-            <!--&#9776;-->
-            Menu
-          </button>
-        </header>
-
-        <script>
-          closeSidebar();
-          // If the menu is open, then close it when the viewport changes.
-          const mediaQuery = window.matchMedia("(min-width: 951px)");
-
-          function handleViewportChange(e) {
-            if (e.matches) {
-              closeSidebar();
-            }
-          }
-          mediaQuery.addListener(handleViewportChange);
-
-          // Initial check
-          handleViewportChange(mediaQuery);
-          function openSidebar() {
-            document.getElementById("navSidebar").style.display =
-              "inline-block";
-            document.getElementById("navSidebarButton").style.display = "none";
-          }
-
-          function closeSidebar() {
-            document.getElementById("navSidebar").style.display = "none";
-            document.getElementById("navSidebarButton").style.display =
-              "inline-block";
-          }
-        </script>
       </div>
     </header>
     <main>
@@ -143,7 +103,8 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <p>Version a4.7.4 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <p>Version a4.7.5 - © Copyright 2022 - 2023 Blueberry Technologies</p>
     <a href="../changelog/">Changelog</a>
+    <script src="../Data/Scripts/navbarScripts.js"></script>
   </footer>
 </html>

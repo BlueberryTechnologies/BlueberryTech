@@ -36,7 +36,7 @@
             <a href="../contactus/">Contact</a>
             <a href="../questions/">Q&A</a>
             <a href="../news/">News & Updates</a>
-            <a class="../products/" href="products">Products & Services</a>
+            <a class="products" href="../products/">Products & Services</a>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
             ☰
@@ -69,7 +69,7 @@
       </div>
     </header>
     <main>
-      <div class="aboutus-html-main">
+      <div class="products-html-main">
         <h2 style="font-size: 50px">Our story.</h2>
 
         <p style="font-size: 25px">
@@ -103,79 +103,90 @@
           /></a>
         </p>
         <hr />
-        <!-- Adding the employee images as a responsive image gallery. (Found on W3) -->
-        <h2 style="font-size: 50px">Programming Department.</h2>
 
-        <div class="responsive">
-          <a href="https://rileyrichard.com">
+        <div class="Employees">
+          <h2 style="font-size: 50px">Programming Department.</h2>
+
+          <div class="QuickBuild-Container-PC">
             <div class="gallery" text-decorations="none">
-              <img
-                class="Employee-Image"
-                src="../Data/Images/Employees/riley.png"
-                alt="Riley" />
               <div class="desc">
-                <p class="Employee-Name">Riley - Lead Web Developer</p>
+                <img
+                  class="Employee-Image"
+                  src="../Data/Images/Employees/riley.png"
+                  alt="Riley" />
+                <p class="Employee-Name">Riley</p>
+                <p class="Employee-Position">Head Web Developer</p>
                 <p class="Employee-Email">
-                  <a href="mailto:riley@blueberry.dev">riley@blueberry.dev</a>
+                  <a target="_blank" href="mailto:riley@blueberry.dev">
+                    riley@blueberry.dev</a
+                  >
                 </p>
+
+                <div class="clearfix"></div>
               </div>
             </div>
-          </a>
-        </div>
+          </div>
+          <div class="QuickBuild-Container-PC">
+            <div class="gallery" text-decorations="none">
+              <div class="desc">
+                <img
+                  class="Employee-Image"
+                  src="../Data/Images/Employees/samuel_new.jpg"
+                  alt="Riley" />
+                <p class="Employee-Name">Samuel</p>
+                <p class="Employee-Position">Web Developer</p>
+                <p class="Employee-Email">
+                  <a target="_blank" href="mailto:sam@blueberry.dev">
+                    sam@blueberry.dev</a
+                  >
+                </p>
 
-        <div class="responsive">
-          <div class="gallery">
-            <img
-              class="Employee-Image"
-              src="../Data/Images/Employees/samuel_new.jpg"
-              alt="Samuel" />
-            <div class="desc">
-              <p class="Employee-Name">Samuel</p>
-              <p class="Employee-Email">
-                <a href="mailto:sam@blueberry.dev">sam@blueberry.dev</a>
-              </p>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <h2 style="font-size: 50px">Creative Department.</h2>
+
+          <div class="QuickBuild-Container-PC">
+            <div class="gallery" text-decorations="none">
+              <div class="desc">
+                <img
+                  class="Employee-Image"
+                  src="../Data/Images/Employees/ryan.jpg"
+                  alt="Riley" />
+                <p class="Employee-Name">Ryan</p>
+                <p class="Employee-Position">Head of Social Media Relations</p>
+                <p class="Employee-Email">
+                  <a target="_blank" href="mailto:ryan@blueberry.dev">
+                    ryan@blueberry.dev</a
+                  >
+                </p>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="QuickBuild-Container-PC">
+            <div class="gallery" text-decorations="none">
+              <div class="desc">
+                <img
+                  class="Employee-Image"
+                  src="../Data/Images/Employees/jon.jpg"
+                  alt="Riley" />
+                <p class="Employee-Name">Jonathan</p>
+                <p class="Employee-Position">Head of Customer Service</p>
+                <p class="Employee-Email">
+                  <a target="_blank" href="mailto:jonathan@blueberry.dev">
+                    jonathan@blueberry.dev</a
+                  >
+                </p>
+
+                <div class="clearfix"></div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="clearfix"></div>
-
-        <h2 style="font-size: 50px">Creative Department.</h2>
-
-        <div class="responsive">
-          <div class="gallery">
-            <img
-              class="Employee-Image"
-              src="../Data/Images/Employees/ryan.jpg"
-              alt="Ryan" />
-
-            <div class="desc">
-              <p class="Employee-Name">Ryan - Head of Social Media Relations</p>
-              <p class="Employee-Email">
-                <a href="mailto:ryan@blueberry.dev">ryan@blueberry.dev</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-            <img
-              class="Employee-Image"
-              src="../Data/Images/Employees/jon.jpg"
-              alt="Jon" />
-            <div class="desc">
-              <p class="Employee-Name">
-                Jonathan - Head Customer Service Representative
-              </p>
-              <p class="Employee-Email">
-                <a href="mailto:jonathan@blueberry.dev"
-                  >jonathan@blueberry.dev</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div class="clearfix"></div>
       </div>
     </main>
@@ -204,14 +215,30 @@
         =========================================================================
         =========================================================================
     -->
-    <footer class="index-html-footer">
-      <p>Version a4.7.5 - © Copyright 2022 - 2023 Blueberry Technologies</p>
-      <div class="footer-socials">
-        <a href="https://www.facebook.com/people/Blueberry-Technologies/100090421412317/"><img class="footer-pic" src="../Data/Images/facebookLogo.png" alt="Facebook"></a>
-        <a href="https://www.tiktok.com/@blueberrytechs"><img class="footer-pic" src="../Data/Images/tiktokLogo.png" alt="TikTok"></a>
-        <a href="https://twitter.com/BlueberryTechs"><img class="footer-pic" src="../Data/Images/twitterLogo.png" alt="Twitter"></a>
-      </div>
-      <a href="../changelog/">Changelog</a>
-      <script src="../Data/Scripts/navbarScripts.js"></script>
-    </footer>
-  </html>
+  <footer class="index-html-footer">
+    <p>Version a4.7.5 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <div class="footer-socials">
+      <a
+        href="https://www.facebook.com/people/Blueberry-Technologies/100090421412317/"
+        ><img
+          class="footer-pic"
+          src="../Data/Images/facebookLogo.png"
+          alt="Facebook"
+      /></a>
+      <a href="https://www.tiktok.com/@blueberrytechs"
+        ><img
+          class="footer-pic"
+          src="../Data/Images/tiktokLogo.png"
+          alt="TikTok"
+      /></a>
+      <a href="https://twitter.com/BlueberryTechs"
+        ><img
+          class="footer-pic"
+          src="../Data/Images/twitterLogo.png"
+          alt="Twitter"
+      /></a>
+    </div>
+    <a href="../changelog/">Changelog</a>
+    <script src="../Data/Scripts/navbarScripts.js"></script>
+  </footer>
+</html>

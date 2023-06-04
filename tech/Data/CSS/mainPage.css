@@ -463,3 +463,90 @@ FOOTER CODE
   margin-top: 10px;
   font-size: 20px;
 }
+
+/* Styles for the elements inside the <main> section */
+.index-html-main {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+#hero-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fee086;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#about-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.read-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fee086;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#contact-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fee086;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}

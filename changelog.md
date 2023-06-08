@@ -1,5 +1,11 @@
 # Website Changelog
 
+### 6/4/23 - Version a4.7.6
+
+- Finished mobile site for better navigation for users.
+- Added content on the home page.
+- Changed the way the staff is displayed on about us.
+
 ### 5/28/23 - Version a4.7.3
 
 - Updated CSS for About page.

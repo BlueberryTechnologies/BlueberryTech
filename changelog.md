@@ -1,5 +1,12 @@
 # Website Changelog
 
+### 9/12/23 - Version a4.7.7
+
+- Fixed resolution of the photos on the 4K Destroyer Customer Showcase. [25](https://github.com/BlueberryTechnologies/BlueberryTech/issues/25)
+- Added 2K Powerhouse Customer Build.
+- Added links to all Blueberry Builds header images. They will all return back to Builds main landing page.
+- Moved the customer builds away from the footer of the main builds page. They are now displayed standalone in builds/customerbuilds.
+
 ### 6/4/23 - Version a4.7.6
 
 - Finished mobile site for better navigation for users.

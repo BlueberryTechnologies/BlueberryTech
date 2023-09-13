@@ -6,11 +6,11 @@
 - Fixed images not loading on the customer build (4k destroyer) footer.
 - Added review reference on main page.
 - Caught up with some errors.
-  - [#16](https://github.com/BlueberryTechnologies/BlueberryTech/issues/16)
-  - [#8](https://github.com/BlueberryTechnologies/BlueberryTech/issues/8)
-  - [#26](https://github.com/BlueberryTechnologies/BlueberryTech/issues/26)
-  - [#24](https://github.com/BlueberryTechnologies/BlueberryTech/issues/24)
-  - [#23](https://github.com/BlueberryTechnologies/BlueberryTech/issues/23)
+  - Have a documentation site. [#16](https://github.com/BlueberryTechnologies/BlueberryTech/issues/16)
+  - Make an icon for the site. [#8](https://github.com/BlueberryTechnologies/BlueberryTech/issues/8)
+  - Footer images aren't loading on the 4k power build page. [#26](https://github.com/BlueberryTechnologies/BlueberryTech/issues/26)
+  - Nav bar doesn't like tablets. [#24](https://github.com/BlueberryTechnologies/BlueberryTech/issues/24)
+  - When scrolling in mobile the about us staff boxes clip over the header nav bar. [#23](https://github.com/BlueberryTechnologies/BlueberryTech/issues/23)
 
 ### 9/12/23 - Version a4.7.7
 

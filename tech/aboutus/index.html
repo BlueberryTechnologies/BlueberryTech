@@ -6,6 +6,8 @@
     <!-- Sets the locale of the site -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Data/CSS/mainPage.css" />
+    <link rel="stylesheet" href="../Data/CSS/mobileCss.css" />
+    <link rel="icon" type="image/x-icon" href="../Data/Images/favicon.ico" />
     <!-- Sets the CSS file. This is a global file -->
     <title>Blueberry Technologies - About</title>
     <!-- This sets the title of the website (where the tab is)-->
@@ -24,14 +26,28 @@
     -->
   <body>
     <header>
-      <div class="header">
+      <div class="Mobile-Container">
+        <div class="Mobile-Header" id="Mobile-Header">
+          <a href="../" class="active"
+            ><img class="Logo-Image" src="../Data/Images/logotransparent.png"
+          /></a>
+          <div id="Nav-Links">
+            <a href="../aboutus/">About</a>
+            <a href="../contactus/">Contact</a>
+            <a href="../questions/">Q&A</a>
+            <a href="../news/">News & Updates</a>
+            <a class="products" href="../products/">Products & Services</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
+            ☰
+          </a>
+        </div>
+
+        <!-- End of header. -->
+      </div>
+      <div class="Desktop-Container">
         <a href="../"
           ><img class="HeaderImage" src="../Data/Images/header.png"
-        /></a>
-        <a href="../"
-          ><img
-            class="HeaderImage-Mobile"
-            src="../Data/Images/banner-tech-mobile.png"
         /></a>
         <div class="navbar">
           <!-- Centered link -->
@@ -40,75 +56,20 @@
           </div>
 
           <!-- Left-aligned links (default) -->
-          <a href="../aboutus">About</a>
-          <a href="../contactus">Contact</a>
-          <a href="../questions">Q&A</a>
-          <a href="../news">News & Updates</a>
+          <a href="../aboutus/">About</a>
+          <a href="../contactus/">Contact</a>
+          <a href="../questions/">Q&A</a>
+          <a href="../news/">News & Updates</a>
 
           <!-- Right-aligned links -->
           <div class="navbar-right">
-            <a class="products" href="../products">Products & Services</a>
+            <a class="products" href="../products/">Products & Services</a>
           </div>
         </div>
-        <nav class="navSidebar" id="navSidebar">
-          <div class="navSidebarClosingXContainer">
-            <span onclick="closeSidebar()" class="navSidebarClosingX">X</span>
-            <br />
-          </div>
-          <ul>
-            <a href="../aboutus/">About</a>
-          </ul>
-          <ul>
-            <a href="../contactus/">Contact</a>
-          </ul>
-          <ul>
-            <a href="../questions/">Q&A</a>
-          </ul>
-          <ul>
-            <a href="../news/">News & Updates</a>
-          </ul>
-          <ul>
-            <a class="products" href="../products/">Products & Services</a>
-          </ul>
-        </nav>
-
-        <header class="navSidebarButton" id="navSidebarButton">
-          <button class="navSidebarButton" onclick="openSidebar()">
-            <!--&#9776;-->
-            Menu
-          </button>
-        </header>
-
-        <script>
-          closeSidebar();
-          // If the menu is open, then close it when the viewport changes.
-          const mediaQuery = window.matchMedia("(min-width: 951px)");
-
-          function handleViewportChange(e) {
-            if (e.matches) {
-              closeSidebar();
-            }
-          }
-          mediaQuery.addListener(handleViewportChange);
-
-          // Initial check
-          handleViewportChange(mediaQuery);
-          function openSidebar() {
-            document.getElementById("navSidebar").style.display =
-              "inline-block";
-            document.getElementById("navSidebarButton").style.display = "none";
-          }
-
-          function closeSidebar() {
-            document.getElementById("navSidebar").style.display = "none";
-            document.getElementById("navSidebarButton").style.display =
-              "inline-block";
-          }
-        </script>
       </div>
     </header>
     <main>
-      <div class="aboutus-html-main">
+      <div class="products-html-main">
         <h2 style="font-size: 50px">Our story.</h2>
 
         <p style="font-size: 25px">
@@ -142,44 +103,91 @@
           /></a>
         </p>
         <hr />
-        <h2 style="font-size: 50px">Founding Members.</h2>
-        <img
-          class="Employee-Image"
-          src="../Data/Images/Employees/riley.png"
-          alt="Riley" />
-        <p class="Employee-Name">Riley - CEO</p>
-        <p class="Employee-Email">
-          <a href="mailto:riley@blueberry.dev">riley@blueberry.dev</a>
-        </p>
-        <img
-          class="Employee-Image"
-          src="../Data/Images/Employees/samuel_new.jpg"
-          alt="Sam" />
-        <p class="Employee-Name">Samuel - COO</p>
-        <p class="Employee-Email">
-          <a href="mailto:sam@blueberry.dev">sam@blueberry.dev</a>
-        </p>
-        <img
-          class="Employee-Image"
-          src="../Data/Images/Employees/ryan.jpg"
-          alt="Ryan" />
-        <p class="Employee-Name">Ryan - CFO</p>
-        <p class="Employee-Email">
-          <a href="mailto:ryan@blueberry.dev">ryan@blueberry.dev</a>
-        </p>
-        <hr />
-        <h2 style="font-size: 50px">Creative Department.</h2>
-        <img
-          class="Employee-Image"
-          src="../Data/Images/Employees/jon.jpg"
-          alt="Jon" />
-        <p class="Employee-Name">
-          Jonathan- Social Media Manager/Lead Customer Service Representative
-        </p>
-        <p class="Employee-Email">
-          <a href="mailto:jonathan@blueberry.dev">jonathan@blueberry.dev</a>
-        </p>
-        <hr />
+
+        <div class="Employees">
+          <h2 style="font-size: 50px">Programming Department.</h2>
+
+          <div class="QuickBuild-Container-PC">
+            <div class="gallery" text-decorations="none">
+              <div class="desc">
+                <img
+                  class="Employee-Image"
+                  src="../Data/Images/Employees/riley.png"
+                  alt="Riley" />
+                <p class="Employee-Name">Riley</p>
+                <p class="Employee-Position">Head Web Developer</p>
+                <p class="Employee-Email">
+                  <a target="_blank" href="mailto:riley@blueberry.dev">
+                    riley@blueberry.dev</a
+                  >
+                </p>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="QuickBuild-Container-PC">
+            <div class="gallery" text-decorations="none">
+              <div class="desc">
+                <img
+                  class="Employee-Image"
+                  src="../Data/Images/Employees/samuel_new.jpg"
+                  alt="Riley" />
+                <p class="Employee-Name">Samuel</p>
+                <p class="Employee-Position">Web Developer</p>
+                <p class="Employee-Email">
+                  <a target="_blank" href="mailto:sam@blueberry.dev">
+                    sam@blueberry.dev</a
+                  >
+                </p>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <h2 style="font-size: 50px">Creative Department.</h2>
+
+          <div class="QuickBuild-Container-PC">
+            <div class="gallery" text-decorations="none">
+              <div class="desc">
+                <img
+                  class="Employee-Image"
+                  src="../Data/Images/Employees/ryan.jpg"
+                  alt="Riley" />
+                <p class="Employee-Name">Ryan</p>
+                <p class="Employee-Position">Head of Social Media Relations</p>
+                <p class="Employee-Email">
+                  <a target="_blank" href="mailto:ryan@blueberry.dev">
+                    ryan@blueberry.dev</a
+                  >
+                </p>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="QuickBuild-Container-PC">
+            <div class="gallery" text-decorations="none">
+              <div class="desc">
+                <img
+                  class="Employee-Image"
+                  src="../Data/Images/Employees/jon.jpg"
+                  alt="Riley" />
+                <p class="Employee-Name">Jonathan</p>
+                <p class="Employee-Position">Head of Customer Service</p>
+                <p class="Employee-Email">
+                  <a target="_blank" href="mailto:jonathan@blueberry.dev">
+                    jonathan@blueberry.dev</a
+                  >
+                </p>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
       </div>
     </main>
   </body>
@@ -208,7 +216,32 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <p>Version a4.7 - © Copyright 2022 - 2023 Blueberry Technologies</p>
+    <p>
+      Version a4.7.7.1 - © Copyright 2022 - 2023 Blueberry Technologies. All
+      rights reserved.
+    </p>
+    <div class="footer-socials">
+      <a
+        href="https://www.facebook.com/people/Blueberry-Technologies/100090421412317/"
+        ><img
+          class="footer-pic"
+          src="../Data/Images/facebookLogo.png"
+          alt="Facebook"
+      /></a>
+      <a href="https://www.tiktok.com/@blueberrytechs"
+        ><img
+          class="footer-pic"
+          src="../Data/Images/tiktokLogo.png"
+          alt="TikTok"
+      /></a>
+      <a href="https://twitter.com/BlueberryTechs"
+        ><img
+          class="footer-pic"
+          src="../Data/Images/twitterLogo.png"
+          alt="Twitter"
+      /></a>
+    </div>
     <a href="../changelog/">Changelog</a>
+    <script src="../Data/Scripts/navbarScripts.js"></script>
   </footer>
 </html>

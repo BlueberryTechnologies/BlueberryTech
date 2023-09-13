@@ -1,6 +1,16 @@
 # Latest News
 
----
+### 9/12/23 - Added new Customer Build
+
+- We have added a new customer build. To view, check it out in Blueberry Builds [here!](https://blueberry.dev/products/builds/customerbuilds/2kpower/)
+
+### 5/28/23 - Changed the layout of the About Page.
+
+- Changed how the users are aligned on the [about](https://blueberry.dev/aboutus/) page.
+
+### 5/6/23 - Added Blueberry Builds!
+
+- If you're in the market for a new custom gaming pc, head on over to Blueberry Builds on the products page!
 
 ### 03/19/2023 - Added dedicated news page!
 

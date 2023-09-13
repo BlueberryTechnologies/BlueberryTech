@@ -1,6 +1,39 @@
 # Website Changelog
 
----
+### 9/13/23 - Version a4.7.7.1
+
+- Changed various image color and hue.
+- Fixed images not loading on the customer build (4k destroyer) footer.
+- Added review reference on main page.
+- Caught up with some errors.
+  - Have a documentation site. [#16](https://github.com/BlueberryTechnologies/BlueberryTech/issues/16)
+  - Make an icon for the site. [#8](https://github.com/BlueberryTechnologies/BlueberryTech/issues/8)
+  - Footer images aren't loading on the 4k power build page. [#26](https://github.com/BlueberryTechnologies/BlueberryTech/issues/26)
+  - Nav bar doesn't like tablets. [#24](https://github.com/BlueberryTechnologies/BlueberryTech/issues/24)
+  - When scrolling in mobile the about us staff boxes clip over the header nav bar. [#23](https://github.com/BlueberryTechnologies/BlueberryTech/issues/23)
+
+### 9/12/23 - Version a4.7.7
+
+- Fixed resolution of the photos on the 4K Destroyer Customer Showcase. [#25](https://github.com/BlueberryTechnologies/BlueberryTech/issues/25)
+- Added 2K Powerhouse Customer Build.
+- Added links to all Blueberry Builds header images. They will all return back to Builds main landing page.
+- Moved the customer builds away from the footer of the main builds page. They are now displayed standalone in builds/customerbuilds.
+
+### 6/4/23 - Version a4.7.6
+
+- Finished mobile site for better navigation for users.
+- Added content on the home page.
+- Changed the way the staff is displayed on about us.
+
+### 5/28/23 - Version a4.7.3
+
+- Updated CSS for About page.
+  - Changed how the staff is presented on the about us page, also allowedt the options for each staff member to have a selected link that their picture redirects to.
+
+### 5/6/23 - Version a4.7.2
+
+- Added Blueberry Builds page.
+  - Now you can submit a Custom PC Build Request!
 
 ### 03/19/23 - Version a4.7
 

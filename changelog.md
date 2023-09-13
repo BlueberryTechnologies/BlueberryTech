@@ -1,6 +1,6 @@
 # Website Changelog
 
-# 9/13/23 - Version a4.7.7.1
+### 9/13/23 - Version a4.7.7.1
 
 - Changed various image color and hue.
 - Fixed images not loading on the customer build (4k destroyer) footer.

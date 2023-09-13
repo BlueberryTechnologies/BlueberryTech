@@ -5,10 +5,16 @@
 - Changed various image color and hue.
 - Fixed images not loading on the customer build (4k destroyer) footer.
 - Added review reference on main page.
+- Caught up with some errors.
+  - [#16](https://github.com/BlueberryTechnologies/BlueberryTech/issues/16)
+  - [#8](https://github.com/BlueberryTechnologies/BlueberryTech/issues/8)
+  - [#26](https://github.com/BlueberryTechnologies/BlueberryTech/issues/26)
+  - [#24](https://github.com/BlueberryTechnologies/BlueberryTech/issues/24)
+  - [#23](https://github.com/BlueberryTechnologies/BlueberryTech/issues/23)
 
 ### 9/12/23 - Version a4.7.7
 
-- Fixed resolution of the photos on the 4K Destroyer Customer Showcase. [25](https://github.com/BlueberryTechnologies/BlueberryTech/issues/25)
+- Fixed resolution of the photos on the 4K Destroyer Customer Showcase. [#25](https://github.com/BlueberryTechnologies/BlueberryTech/issues/25)
 - Added 2K Powerhouse Customer Build.
 - Added links to all Blueberry Builds header images. They will all return back to Builds main landing page.
 - Moved the customer builds away from the footer of the main builds page. They are now displayed standalone in builds/customerbuilds.

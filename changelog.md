@@ -1,5 +1,11 @@
 # Website Changelog
 
+# 9/13/23 - Version a4.7.7.1
+
+- Changed various image color and hue.
+- Fixed images not loading on the customer build (4k destroyer) footer.
+- Added review reference on main page.
+
 ### 9/12/23 - Version a4.7.7
 
 - Fixed resolution of the photos on the 4K Destroyer Customer Showcase. [25](https://github.com/BlueberryTechnologies/BlueberryTech/issues/25)

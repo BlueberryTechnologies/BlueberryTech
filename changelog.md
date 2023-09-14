@@ -1,5 +1,18 @@
 # Website Changelog
 
+### 9/14/23 - Version 1
+
+- Changed the changelog div class to match the news page.
+- Changed the footer, is more consistent throughout the website.
+- Added hyperlink to admin login page on the footer, and aboutus page.
+- Some pages had duplicate footer scripts, those were removed.
+- Scrapped Blueberry Studios until we can gain traction and support it fully.
+  - It's coming back!
+- Changed how the customer PC pictures are displayed on the page. They now use the same container as the about pages and tiered pc pages.
+  - This should also make it easier to load the images for the user.
+- Changed some employee photos. (More serious...)
+- Added login system for employees.
+
 ### 9/13/23 - Version a4.7.7.1
 
 - Changed various image color and hue.

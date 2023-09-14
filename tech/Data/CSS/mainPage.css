@@ -46,6 +46,7 @@ THIS SECTION IS FOR FONTS
 body {
   margin-top: 0;
 }
+
 /*
 ============================================================
 ============================================================
@@ -199,13 +200,37 @@ main {
   font-size: 25px;
 }
 .index-html-footer {
-  font-family: BlueberryCorporate;
+  /*
+  
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   padding-top: auto;
   text-align: center;
   text-decoration: none;
+  */
+  font-family: BlueberryCorporate;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  bottom: 0;
+  font-size: 13px;
+}
+
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
 }
 
 /*

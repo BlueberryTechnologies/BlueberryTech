@@ -5,14 +5,11 @@
     <meta charset="UTF-8" />
     <!-- Sets the locale of the site -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../Data/CSS/mainPage.css" />
-    <link rel="stylesheet" href="../../../Data/CSS/mobileCss.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../../../Data/Images/favicon.ico" />
+    <link rel="stylesheet" href="../../Data/CSS/mainPage.css" />
+    <link rel="stylesheet" href="../../Data/CSS/mobileCss.css" />
+    <link rel="icon" type="image/x-icon" href="../../Data/Images/favicon.ico" />
     <!-- Sets the CSS file. This is a global file -->
-    <title>Blueberry Technologies - High Tier Configurator</title>
+    <title>Blueberry Technologies - Login to Portal</title>
     <!-- This sets the title of the website (where the tab is)-->
   </head>
 
@@ -31,19 +28,17 @@
     <header>
       <div class="Mobile-Container">
         <div class="Mobile-Header" id="Mobile-Header">
-          <a href="../../../" class="active"
+          <a href="../../" class="active"
             ><img
               class="Logo-Image"
-              src="../../../Data/Images/logotransparent.png"
+              src="../../Data/Images/logotransparent.png"
           /></a>
           <div id="Nav-Links">
-            <a href="../../../aboutus/">About</a>
-            <a href="../../../contactus/">Contact</a>
-            <a href="../../../questions/">Q&A</a>
-            <a href="../../../news/">News & Updates</a>
-            <a class="products" href="../../../products/"
-              >Products & Services</a
-            >
+            <a href="../../aboutus/">About</a>
+            <a href="../../contactus/">Contact</a>
+            <a href="../../questions/">Q&A</a>
+            <a href="../../news/">News & Updates</a>
+            <a class="products" href="../../products/">Products & Services</a>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
             ☰
@@ -53,43 +48,61 @@
         <!-- End of header. -->
       </div>
       <div class="Desktop-Container">
-        <a href="../../../"
-          ><img class="HeaderImage" src="../../../Data/Images/header.png"
+        <a href="../../"
+          ><img class="HeaderImage" src="../../Data/Images/header.png"
         /></a>
         <div class="navbar">
           <!-- Centered link -->
           <div class="navbar-centered">
-            <a href="../../../" class="active">Home</a>
+            <a href="../../" class="active">Home</a>
           </div>
 
           <!-- Left-aligned links (default) -->
-          <a href="../../../aboutus/">About</a>
-          <a href="../../../contactus/">Contact</a>
-          <a href="../../../questions/">Q&A</a>
-          <a href="../../../news/">News & Updates</a>
+          <a href="../../aboutus/">About</a>
+          <a href="../../contactus/">Contact</a>
+          <a href="../../questions/">Q&A</a>
+          <a href="../../news/">News & Updates</a>
 
           <!-- Right-aligned links -->
           <div class="navbar-right">
-            <a class="products" href="../../../products/"
-              >Products & Services</a
-            >
+            <a class="products" href="../../products/">Products & Services</a>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- BEGINNING OF THE BODY -->
+    <!--
 
+        THIS IS THE MAIN
+        
+    -->
     <main>
       <div class="products-html-main">
-        <a href="../"
-          ><img
-            class="BannerImage-BBTBE"
-            src="../../../Data/Images/blueberry_builder.png"
-        /></a>
-        <hr />
-        <h1 class="QuickBuilds-Header">High Tier Gaming PC</h1>
-        <p>Coming Soon!</p>
+        <h2 style="font-size: 50px">Create Account.</h2>
+        <form class="login-form">
+          <input
+            class="input-form-text"
+            type="username"
+            id="id number"
+            name="id"
+            required
+            placeholder="Enter your ID Number." />
+          <input
+            class="input-form-text"
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Create your Password." />
+          <input
+            class="input-form-text"
+            type="confirm-password"
+            id="password"
+            name="password"
+            required
+            placeholder="Confirm your Password." />
+          <input class="login-button" type="submit" value="Confirm" />
+        </form>
       </div>
     </main>
   </body>
@@ -105,6 +118,18 @@
         =========================================================================
         =========================================================================
         -->
+
+  <!--
+        =========================================================================
+        =========================================================================
+        =========================================================================
+
+        THE END OF THE FOOTER SECTION (SHOULD BE THE SAME FOR ALL THE PAGES)
+
+        =========================================================================
+        =========================================================================
+        =========================================================================
+    -->
   <footer class="index-html-footer">
     <div class="left">
       <div class="copyright-information">
@@ -119,25 +144,25 @@
         href="https://www.facebook.com/people/Blueberry-Technologies/100090421412317/"
         ><img
           class="footer-pic"
-          src="../../../Data/Images/facebookLogo.png"
+          src="../../Data/Images/facebookLogo.png"
           alt="Facebook"
       /></a>
       <a href="https://www.tiktok.com/@blueberrytechs"
         ><img
           class="footer-pic"
-          src="../../../Data/Images/tiktokLogo.png"
+          src="../../Data/Images/tiktokLogo.png"
           alt="TikTok"
       /></a>
       <a href="https://twitter.com/BlueberryTechs"
         ><img
           class="footer-pic"
-          src="../../../Data/Images/twitterLogo.png"
+          src="../../Data/Images/twitterLogo.png"
           alt="Twitter"
       /></a>
       <div class="changelog">
-        <a href="../../../changelog/">Changelog</a>
+        <a href="../../changelog/">Changelog</a>
       </div>
     </div>
-    <script src="../../../Data/Scripts/navbarScripts.js"></script>
+    <script src="../../Data/Scripts/navbarScripts.js"></script>
   </footer>
 </html>

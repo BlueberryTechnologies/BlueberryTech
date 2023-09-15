@@ -47,6 +47,43 @@ body {
   margin-top: 0;
 }
 
+form {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input-form-text {
+  width: 100%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: BlueberryCorporate;
+  font-size: 17px;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.login-button {
+  padding: 7px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 4px 2px;
+  width: 100%;
+  font-family: BlueberryCorporate;
+  font-size: 17px;
+}
+
+.new-user a {
+  font-family: BlueberryCorporate;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+.new-user {
+  margin: 10px;
+}
+
 /*
 ============================================================
 ============================================================
@@ -221,10 +258,10 @@ main {
 }
 
 .left {
-  width: 50%;
+  width: 60%;
 }
 .right {
-  width: 50%;
+  width: 40%;
 }
 .left {
   text-align: left;

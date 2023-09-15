@@ -26,7 +26,7 @@ if ($SERVER["REQUEST_METHOD"] === "POST") {
         if ($errors){
             $_SESSION["errors_signup"] = $errors;
 
-            $sign
+            //$sign
         }
     } catch (PDOException $e) {
         die("Query failed: " . $e->getMessage());

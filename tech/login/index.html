@@ -77,8 +77,26 @@
     <main>
       <div class="products-html-main">
         <h2 style="font-size: 50px">Login.</h2>
-
-        <hr />
+        <form class="login-form">
+          <input
+            class="input-form-text"
+            type="username"
+            id="id number"
+            name="id"
+            required
+            placeholder="Enter your ID Number." />
+          <input
+            class="input-form-text"
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Enter your Password." />
+          <input class="login-button" type="submit" value="Login" />
+        </form>
+        <div class="new-user">
+          <a href="new-user">New Employee? Click here.</a>
+        </div>
       </div>
     </main>
   </body>
@@ -114,10 +132,6 @@
           reserved.
         </p>
       </div>
-      <div class="changelog">
-        <a href="../changelog/">Changelog</a>
-      </div>
-      <div class="admin-login"><a href="../login/"> Admin Login</a></div>
     </div>
     <div class="right">
       <a
@@ -139,6 +153,9 @@
           src="../Data/Images/twitterLogo.png"
           alt="Twitter"
       /></a>
+      <div class="changelog">
+        <a href="../changelog/">Changelog</a>
+      </div>
     </div>
     <script src="../Data/Scripts/navbarScripts.js"></script>
   </footer>

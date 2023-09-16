@@ -84,6 +84,36 @@ form {
   margin: 10px;
 }
 
+.employee-welcome-id {
+  padding: 0px;
+  margin: 0px;
+}
+
+.employee-welcome-name {
+  padding: 0px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: -5px;
+}
+
+.employee-last-login {
+  margin: 0px;
+}
+
+.quick-links {
+  width: 75%;
+}
+.quick-links a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  background-color: #eee;
+}
+.quick-links a:hover {
+  background-color: #ccc;
+}
+
 /*
 ============================================================
 ============================================================

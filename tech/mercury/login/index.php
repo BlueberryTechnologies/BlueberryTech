@@ -1,8 +1,8 @@
 <!-- Blueberry Tech - Last Update: 221208 - riley -->
 
 <?php
-require_once '../Data/includes/config_session.inc.php';
-require_once '../Data/includes/login_view.inc.php';
+require_once '../data/includes/config_session.inc.php';
+require_once '../data/includes/login_view.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,9 +12,9 @@ require_once '../Data/includes/login_view.inc.php';
   <meta charset="UTF-8" />
   <!-- Sets the locale of the site -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../Data/CSS/mainPage.css" />
-  <link rel="stylesheet" href="../Data/CSS/mobileCss.css" />
-  <link rel="icon" type="image/x-icon" href="../Data/Images/favicon.ico" />
+  <link rel="stylesheet" href="../data/CSS/mainPage.css" />
+  <link rel="stylesheet" href="../data/CSS/mobileCss.css" />
+  <link rel="icon" type="image/x-icon" href="../data/Images/favicon.ico" />
   <!-- Sets the CSS file. This is a global file -->
   <title>Blueberry Technologies - Login to Portal</title>
   <!-- This sets the title of the website (where the tab is)-->
@@ -36,11 +36,11 @@ require_once '../Data/includes/login_view.inc.php';
   <header>
     <div class="Mobile-Container">
       <div class="Mobile-Header" id="Mobile-Header">
-        <a href="../" class="active"><img class="Logo-Image" src="../Data/Images/logotransparent.png" /></a>
+        <a href="../" class="active"><img class="Logo-Image" src="../data/Images/logotransparent.png" /></a>
         <div id="Nav-Links">
           <a href="../aboutus/">About</a>
           <a href="../contactus/">Contact</a>
-          <a href="../questions/">Q&A</a>
+
           <a href="../news/">News & Updates</a>
           <a class="products" href="../products/">Products & Services</a>
         </div>
@@ -52,7 +52,7 @@ require_once '../Data/includes/login_view.inc.php';
       <!-- End of header. -->
     </div>
     <div class="Desktop-Container">
-      <a href="../"><img class="HeaderImage" src="../Data/Images/header.png" /></a>
+      <a href="../"><img class="HeaderImage" src="../data/Images/header.png" /></a>
       <div class="navbar">
         <!-- Centered link -->
         <div class="navbar-centered">
@@ -62,7 +62,7 @@ require_once '../Data/includes/login_view.inc.php';
         <!-- Left-aligned links (default) -->
         <a href="../aboutus/">About</a>
         <a href="../contactus/">Contact</a>
-        <a href="../questions/">Q&A</a>
+
         <a href="../news/">News & Updates</a>
 
         <!-- Right-aligned links -->
@@ -81,7 +81,7 @@ require_once '../Data/includes/login_view.inc.php';
   <main>
     <div class="products-html-main">
       <h2 style="font-size: 50px">Login.</h2>
-      <form action="../Data/includes/login.inc.php" method="POST">
+      <form action="../data/includes/login.inc.php" method="POST">
         <input type="text" name="username" placeholder="Username" />
         <input type="password" name="pwd" placeholder="Password" />
         <button>Login</button>
@@ -144,14 +144,14 @@ require_once '../Data/includes/login_view.inc.php';
     </div>
   </div>
   <div class="right">
-    <a href="https://www.facebook.com/people/Blueberry-Technologies/100090421412317/"><img class="footer-pic" src="../Data/Images/facebookLogo.png" alt="Facebook" /></a>
-    <a href="https://www.tiktok.com/@blueberrytechs"><img class="footer-pic" src="../Data/Images/tiktokLogo.png" alt="TikTok" /></a>
-    <a href="https://twitter.com/BlueberryTechs"><img class="footer-pic" src="../Data/Images/twitterLogo.png" alt="Twitter" /></a>
+    <a href="https://www.facebook.com/people/Blueberry-Technologies/100090421412317/"><img class="footer-pic" src="../data/Images/facebookLogo.png" alt="Facebook" /></a>
+    <a href="https://www.tiktok.com/@blueberrytechs"><img class="footer-pic" src="../data/Images/tiktokLogo.png" alt="TikTok" /></a>
+    <a href="https://twitter.com/BlueberryTechs"><img class="footer-pic" src="../data/Images/twitterLogo.png" alt="Twitter" /></a>
     <div class="changelog">
       <a href="../changelog/">Changelog</a>
     </div>
   </div>
-  <script src="../Data/Scripts/navbarScripts.js"></script>
+  <script src="../data/Scripts/navbarScripts.js"></script>
 </footer>
 
 </html>

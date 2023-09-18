@@ -14,11 +14,15 @@
   .Mobile-Header {
     overflow: hidden;
     background-color: #333;
-    position: relative;
+    position: fixed;
     padding: 10px 16px;
     margin: auto;
     background: #333;
     color: #f1f1f1;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
   }
 
   .Mobile-Header #Nav-Links {
@@ -71,7 +75,6 @@
     position: relative;
     float: left;
   }
-  
 }
 body {
   margin: 0;

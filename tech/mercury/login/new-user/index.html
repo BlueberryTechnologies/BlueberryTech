@@ -5,15 +5,12 @@
     <meta charset="UTF-8" />
     <!-- Sets the locale of the site -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../Data/CSS/mainPage.css" />
-    <link rel="stylesheet" href="../../Data/CSS/mobileCss.css" />
-    <link rel="icon" type="image/x-icon" href="../../Data/Images/favicon.ico" />
+    <link rel="stylesheet" href="../../data/CSS/mainPage.css" />
+    <link rel="stylesheet" href="../../data/CSS/mobileCss.css" />
+    <link rel="icon" type="image/x-icon" href="../../data/Images/favicon.ico" />
     <!-- Sets the CSS file. This is a global file -->
-    <title>Blueberry Technologies - Internal Updates</title>
+    <title>Blueberry Technologies - Login to Portal</title>
     <!-- This sets the title of the website (where the tab is)-->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
   </head>
 
   <!--
@@ -34,14 +31,14 @@
           <a href="../../" class="active"
             ><img
               class="Logo-Image"
-              src="../../Data/Images/logotransparent.png"
+              src="../../data/Images/logotransparent.png"
           /></a>
           <div id="Nav-Links">
-            <a href="../orders-jobs/">Orders and Jobs</a>
-            <a href="../../admin/server-info/">Server Information & Status</a>
-            <a href="../../admin/employees/">Employees</a>
-            <a href="../internal-updates/">Internal Updates</a>
-            <a class="products" href="../">Return to Site</a>
+            <a href="../../aboutus/">About</a>
+            <a href="../../contactus/">Contact</a>
+            <a href="../../questions/">Q&A</a>
+            <a href="../../news/">News & Updates</a>
+            <a class="products" href="../../products/">Products & Services</a>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
             ☰
@@ -52,18 +49,23 @@
       </div>
       <div class="Desktop-Container">
         <a href="../../"
-          ><img class="HeaderImage" src="../../Data/Images/header.png"
+          ><img class="HeaderImage" src="../../data/Images/header.png"
         /></a>
         <div class="navbar">
+          <!-- Centered link -->
+          <div class="navbar-centered">
+            <a href="../../" class="active">Home</a>
+          </div>
+
           <!-- Left-aligned links (default) -->
-          <a href="../orders-jobs/">Orders and Jobs</a>
-          <a href="../../admin/server-info/">Server Information & Status</a>
-          <a href="../../admin/employees/">Employees</a>
-          <a href="../internal-updates/">Internal Updates</a>
+          <a href="../../aboutus/">About</a>
+          <a href="../../contactus/">Contact</a>
+          <a href="../../questions/">Q&A</a>
+          <a href="../../news/">News & Updates</a>
 
           <!-- Right-aligned links -->
           <div class="navbar-right">
-            <a class="products" href="../../">Return to Site</a>
+            <a class="products" href="../../products/">Products & Services</a>
           </div>
         </div>
       </div>
@@ -76,16 +78,31 @@
     -->
     <main>
       <div class="products-html-main">
-        <h2 class="employee-welcome-name" style="font-size: 50px">
-          Internal Updates
-        </h2>
-        <div class="index-html-main">
-          <zero-md src="../../../internal-updates.md"></zero-md>
-        </div>
-        <!--
-            Replace NULL with "Welcome, *Employee Name*"
-        -->
-        <br />
+        <h2 style="font-size: 50px">Create Account.</h2>
+        <form class="login-form">
+          <input
+            class="input-form-text"
+            type="username"
+            id="id number"
+            name="id"
+            required
+            placeholder="Enter your ID Number." />
+          <input
+            class="input-form-text"
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Create your Password." />
+          <input
+            class="input-form-text"
+            type="confirm-password"
+            id="password"
+            name="password"
+            required
+            placeholder="Confirm your Password." />
+          <input class="login-button" type="submit" value="Confirm" />
+        </form>
       </div>
     </main>
   </body>
@@ -114,12 +131,38 @@
         =========================================================================
     -->
   <footer class="index-html-footer">
-    <div class="copyright-information">
-      <p>
-        Version 1 - © Copyright 2022 - 2023 Blueberry Technologies. All rights
-        reserved.
-      </p>
+    <div class="left">
+      <div class="copyright-information">
+        <p>
+          Version 1 - © Copyright 2022 - 2023 Blueberry Technologies. All rights
+          reserved.
+        </p>
+      </div>
     </div>
-    <script src="../../Data/Scripts/navbarScripts.js"></script>
+    <div class="right">
+      <a
+        href="https://www.facebook.com/people/Blueberry-Technologies/100090421412317/"
+        ><img
+          class="footer-pic"
+          src="../../data/Images/facebookLogo.png"
+          alt="Facebook"
+      /></a>
+      <a href="https://www.tiktok.com/@blueberrytechs"
+        ><img
+          class="footer-pic"
+          src="../../data/Images/tiktokLogo.png"
+          alt="TikTok"
+      /></a>
+      <a href="https://twitter.com/BlueberryTechs"
+        ><img
+          class="footer-pic"
+          src="../../data/Images/twitterLogo.png"
+          alt="Twitter"
+      /></a>
+      <div class="changelog">
+        <a href="../../changelog/">Changelog</a>
+      </div>
+    </div>
+    <script src="../../data/Scripts/navbarScripts.js"></script>
   </footer>
 </html>

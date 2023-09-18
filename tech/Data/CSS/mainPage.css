@@ -227,6 +227,10 @@ INDEX.HTML
 ============================================================
 ============================================================
 */
+html {
+  scroll-padding-top: 100px;
+}
+
 main {
   width: 100%;
 }
@@ -245,6 +249,8 @@ main {
   position: relative;
   width: 75%;
   margin: 0 auto;
+
+  margin-top: 140px;
 }
 .index-html-p {
   font-family: BlueberryCorporate;
@@ -285,6 +291,7 @@ main {
   margin: 0 auto;
   bottom: 0;
   font-size: 13px;
+  margin-bottom: 25px;
 }
 
 .left {
@@ -313,6 +320,8 @@ CHANGELOG.HTML
   font-size: 25px;
   width: 75%;
   margin: 0 auto;
+
+  margin-top: 140px;
 }
 /*
 ============================================================
@@ -326,6 +335,8 @@ ABOUTUS.HTML
   margin: 0 auto;
   font-family: BlueberryCorporate;
   font-size: 24px;
+
+  margin-top: 150px;
 }
 .Employee-Name {
   font-size: 1.6em;
@@ -428,6 +439,8 @@ CONTACTUS.HTML
   width: 75%;
   margin: 0 auto;
   font-size: 24px;
+
+  margin-top: 140px;
 }
 /*
 ============================================================
@@ -457,6 +470,8 @@ PRODUCTS.HTML
   width: 75%;
   margin: 0 auto;
   font-size: 24px;
+
+  margin-top: 130px;
 }
 
 /*

@@ -2,6 +2,16 @@
 
 ### 9/14/23 - Version 1
 
+### Main Changes
+
+- Added login system for employees.
+  - An employee can now sign into the employee portal and have a unique username and password.
+  - This is implemented with a SQL database and connected by PHP.
+- Added new employee page to assign password.
+  - When the employee is first starting their account, they will have the option to choose their own password.
+
+#### Minor Changes
+
 - Changed the changelog div class to match the news page.
 - Changed the footer, is more consistent throughout the website.
 - Added hyperlink to admin login page on the aboutus page.
@@ -11,8 +21,14 @@
 - Changed how the customer PC pictures are displayed on the page. They now use the same container as the about pages and tiered pc pages.
   - This should also make it easier to load the images for the user.
 - Changed some employee photos. (More serious...)
-- Added login system for employees.
-- Added new employee page to assign password.
+- Changed names of folders and paths
+- Removed Questions page.
+- Changed how news.md and changelog.md are displayed on the site.
+  - Instead of relying on the pushed version on GitHub, the site shows local version in site files.
+- Fixed bugs also
+  - Jumping text while scrolling [#31](https://github.com/BlueberryTechnologies/BlueberryTech/issues/31)
+  - Content showing above nav bar [#30](https://github.com/BlueberryTechnologies/BlueberryTech/issues/30)
+  - Can't scroll on the main page [#29](https://github.com/BlueberryTechnologies/BlueberryTech/issues/29)
 
 ### 9/13/23 - Version a4.7.7.1
 

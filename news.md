@@ -1,10 +1,12 @@
 # Latest News
 
-### 9/12/23 - Added new Customer Build
+---
+
+### 9/12/23 - Added new Customer Build!
 
 - We have added a new customer build. To view, check it out in Blueberry Builds [here!](https://blueberry.dev/products/builds/customerbuilds/2kpower/)
 
-### 5/28/23 - Changed the layout of the About Page.
+### 5/28/23 - Changed the layout of the About Page!
 
 - Changed how the users are aligned on the [about](https://blueberry.dev/aboutus/) page.
 

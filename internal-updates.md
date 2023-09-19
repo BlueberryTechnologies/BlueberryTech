@@ -1,4 +1,11 @@
-### 9/12/23 - Employee Login
+## Latest Internal Updates
 
-- New Jobs and Order Section Launched.
-- Keep an eye out for v1 of the site.
+---
+
+### Employee Login
+
+- You can now login and access certain features of the website.
+
+### Server Information
+
+- There is now a hub for all server information. You can access the server's database and perform additions/removals.

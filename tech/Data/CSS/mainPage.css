@@ -7,12 +7,12 @@ THIS SECTION IS FOR FONTS
   font-family: "BlueberryCorporate";
   src: url(../Fonts/CorporateFont/BlueberryDevFont_LN.otf);
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 834px) {
   .Desktop-Container {
     display: none;
   }
 }
-@media screen and (min-width: 951px) {
+@media screen and (min-width: 835px) {
   .Mobile-Container {
     display: none;
   }
@@ -249,8 +249,17 @@ main {
   position: relative;
   width: 75%;
   margin: 0 auto;
+}
 
-  margin-top: 140px;
+.employee-welcome-name {
+  padding-top: 20px;
+}
+
+.internal-news-main {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 .index-html-p {
   font-family: BlueberryCorporate;
@@ -320,8 +329,6 @@ CHANGELOG.HTML
   font-size: 25px;
   width: 75%;
   margin: 0 auto;
-
-  margin-top: 140px;
 }
 /*
 ============================================================
@@ -335,8 +342,6 @@ ABOUTUS.HTML
   margin: 0 auto;
   font-family: BlueberryCorporate;
   font-size: 24px;
-
-  margin-top: 150px;
 }
 .Employee-Name {
   font-size: 1.6em;
@@ -439,8 +444,6 @@ CONTACTUS.HTML
   width: 75%;
   margin: 0 auto;
   font-size: 24px;
-
-  margin-top: 140px;
 }
 /*
 ============================================================
@@ -470,8 +473,6 @@ PRODUCTS.HTML
   width: 75%;
   margin: 0 auto;
   font-size: 24px;
-
-  margin-top: 130px;
 }
 
 /*

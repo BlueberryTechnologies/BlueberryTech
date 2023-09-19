@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../data/CSS/mainPage.css" />
     <link rel="stylesheet" href="../data/CSS/mobileCss.css" />
     <link rel="icon" type="image/x-icon" href="../data/Images/favicon.ico" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
     <!-- Sets the CSS file. This is a global file -->
     <title>Blueberry Technologies - Admin Panel</title>
     <!-- This sets the title of the website (where the tab is)-->
@@ -33,9 +36,8 @@
           /></a>
           <div id="Nav-Links">
             <a href="orders-jobs/">Orders and Jobs</a>
-            <a href="../admin/server-info/">Server Information & Status</a>
-            <a href="../admin/employees/">Employees</a>
-            <a href="internal-updates/">Internal Updates</a>
+            <a href="server-info/">Server Information & Status</a>
+            <a href="employees/">Employees</a>
             <a class="products" href="../">Return to Site</a>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
@@ -52,9 +54,8 @@
         <div class="navbar">
           <!-- Left-aligned links (default) -->
           <a href="orders-jobs/">Orders and Jobs</a>
-          <a href="../admin/server-info/">Server Information & Status</a>
-          <a href="../admin/employees/">Employees</a>
-          <a href="internal-updates/">Internal Updates</a>
+          <a href="server-info/">Server Information & Status</a>
+          <a href="employees/">Employees</a>
 
           <!-- Right-aligned links -->
           <div class="navbar-right">
@@ -72,21 +73,23 @@
     <main>
       <div class="products-html-main">
         <h2 class="employee-welcome-name" style="font-size: 50px">
-          Welcome, Riley.
+          Welcome, NULL.
         </h2>
-        <p class="employee-welcome-id">ID: 13521</p>
-        <p class="employee-last-login">Last Login: 2/3/34 12:12:12</p>
+        <p class="employee-welcome-id">ID: 12345</p>
+        <p class="employee-last-login">Last Login: 01/1/70 12:12:12</p>
         <!--
             Replace NULL with "Welcome, *Employee Name*"
         -->
-        <br />
+        <div class="internal-news-main">
+          <zero-md
+            src="https://raw.githubusercontent.com/BlueberryTechnologies/BlueberryTech/main/internal-updates.md"></zero-md>
+        </div>
 
         <h3>Quick Links:</h3>
         <div class="quick-links">
           <a href="orders-jobs/">Orders and Jobs</a>
-          <a href="../admin/server-info/">Server Information & Status</a>
-          <a href="../admin/employees/">Employees</a>
-          <a href="internal-updates/">Internal Updates</a>
+          <a href="server-info/">Server Information & Status</a>
+          <a href="employees/">Employees</a>
           <a href="../">Return to Site</a>
         </div>
       </div>

@@ -1,4 +1,4 @@
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 480px) {
   .Mobile-container {
     max-width: 480px;
     margin: auto;
@@ -6,6 +6,22 @@
     height: 500px;
     color: white;
     border-radius: 10px;
+  }
+
+  .index-html-main {
+    margin-top: 120px;
+  }
+  .changelog-html-main {
+    margin-top: 140px;
+  }
+  .aboutus-html-main {
+    margin-top: 150px;
+  }
+  .contactus-html-main {
+    margin-top: 140px;
+  }
+  .products-html-main {
+    margin-top: 130px;
   }
   .PC-Form-Desktop {
     display: none;
@@ -78,4 +94,98 @@
 }
 body {
   margin: 0;
+}
+@media (min-width: 481px) and (max-width: 834px) {
+  .Mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #333;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .index-html-main {
+    margin-top: 150px;
+  }
+  .changelog-html-main {
+    margin-top: 150px;
+  }
+  .aboutus-html-main {
+    margin-top: 170px;
+  }
+  .contactus-html-main {
+    margin-top: 150px;
+  }
+  .products-html-main {
+    margin-top: 150px;
+  }
+  .PC-Form-Desktop {
+    display: none;
+  }
+
+  .Mobile-Header {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    padding: 10px 16px;
+    margin: auto;
+    background: #333;
+    color: #f1f1f1;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .Mobile-Header #Nav-Links {
+    display: none;
+  }
+
+  .Mobile-Header a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .Mobile-Header a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .Mobile-Header a:hover {
+    background-color: #333;
+    color: black;
+  }
+
+  .active {
+    background-color: #333;
+    color: white;
+  }
+  .Logo-Image {
+    height: 10%;
+    width: 10%;
+  }
+  .sticky {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .sticky + .content {
+    padding-top: 100px;
+  }
+  .Mobile-Logo {
+    width: 10%;
+    height: 10%;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+  }
 }

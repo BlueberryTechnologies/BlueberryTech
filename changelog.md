@@ -1,6 +1,8 @@
 # Website Changelog
 
-### 9/14/23 - Version 1
+---
+
+## 9/14/23 - Version 1
 
 ### Main Changes
 
@@ -14,21 +16,23 @@
 
 - Changed the changelog div class to match the news page.
 - Changed the footer, is more consistent throughout the website.
-- Added hyperlink to admin login page on the aboutus page.
+- Added hyperlink to admin login page on the about us page.
 - Some pages had duplicate footer scripts, those were removed.
 - Scrapped Blueberry Studios until we can gain traction and support it fully.
   - It's coming back (soon)!
 - Changed how the customer PC pictures are displayed on the page. They now use the same container as the about pages and tiered pc pages.
   - This should also make it easier to load the images for the user.
 - Changed some employee photos. (More serious...)
-- Changed names of folders and paths
+- Changed names of folders and paths.
 - Removed Questions page.
-- Changed how news.md and changelog.md are displayed on the site.
-  - Instead of relying on the pushed version on GitHub, the site shows local version in site files.
-- Fixed bugs also
-  - Jumping text while scrolling [#31](https://github.com/BlueberryTechnologies/BlueberryTech/issues/31)
-  - Content showing above nav bar [#30](https://github.com/BlueberryTechnologies/BlueberryTech/issues/30)
-  - Can't scroll on the main page [#29](https://github.com/BlueberryTechnologies/BlueberryTech/issues/29)
+- Changed some fonts to match the BlueberryCorporate spec.
+- Mobile looks better on tablets and phones.
+
+#### Fixed Bugs
+
+- Jumping text while scrolling [#31](https://github.com/BlueberryTechnologies/BlueberryTech/issues/31)
+- Content showing above nav bar [#30](https://github.com/BlueberryTechnologies/BlueberryTech/issues/30)
+- Can't scroll on the main page [#29](https://github.com/BlueberryTechnologies/BlueberryTech/issues/29)
 
 ### 9/13/23 - Version a4.7.7.1
 

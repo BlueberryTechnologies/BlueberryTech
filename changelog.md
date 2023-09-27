@@ -20,6 +20,7 @@
 - Some pages had duplicate footer scripts, those were removed.
 - Scrapped Blueberry Studios until we can gain traction and support it fully.
   - It's coming back (soon)!
+- Made Blueberry Builds Hidden. (For now)
 - Changed how the customer PC pictures are displayed on the page. They now use the same container as the about pages and tiered pc pages.
   - This should also make it easier to load the images for the user.
 - Changed some employee photos. (More serious...)

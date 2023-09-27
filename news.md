@@ -2,6 +2,10 @@
 
 ---
 
+### 01/01/01 - Version 1 of the Site Launched!
+
+- We have finally launched Version 1 of the website. To check the patch notes, please check the changelog [here!](https://blueberry.dev/changelog/)
+
 ### 9/12/23 - Added new Customer Build!
 
 - We have added a new customer build. To view, check it out in Blueberry Builds [here!](https://blueberry.dev/products/builds/customerbuilds/2kpower/)

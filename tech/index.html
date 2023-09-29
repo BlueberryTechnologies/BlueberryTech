@@ -123,11 +123,27 @@
           src="data/Images/twitterLogo.png"
           alt="Twitter"
       /></a>
+      <a href="https://discord.gg/rKxW8n8vHU"
+        ><img
+          class="footer-pic"
+          src="data/images/discord-mark-blue.svg"
+          alt="Blueberry Technologies Discord"
+      /></a>
       <div class="changelog">
         <a href="changelog/">Changelog</a>
       </div>
     </div>
     <script src="data/Scripts/navbarScripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+          server: '992977709464559690', // Blueberry Technologies
+          channel: '1154803714708750346', // #questions
+          glyph: ['data/Images/logotransparent.png', '70%'],
+          color: '#000',
+          location: ['bottom', 'left']
+      })
+      crate.notify('Click the banana to join the Discord!')
+    </script>
   </footer>
   <!-- The script for the navbar menu and sticky navbar on mobile -->
 </html>

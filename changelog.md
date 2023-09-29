@@ -28,6 +28,8 @@
 - Removed Questions page.
 - Changed some fonts to match the BlueberryCorporate spec.
 - Mobile looks better on tablets and phones.
+- Added integration with Widgetbot and dynamic discord features.
+  - Shows a popup on each page to give the user the option to join the discord.
 
 #### Fixed Bugs
 

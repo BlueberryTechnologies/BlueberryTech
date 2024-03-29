@@ -3,7 +3,7 @@ import blueberryLogo from "../assets/Images/ImageFiles/logotransparent.png";
 import githubLogo from "../assets/Images/SVG/github-mark-white.svg";
 import "./Landing.css";
 
-function Landing() {
+export default function Landing() {
   return (
     <>
       <div>
@@ -19,11 +19,6 @@ function Landing() {
           </Link>
         </button>
       </div>
-      <Typography className="read-the-docs">
-        © 2024 Blueberry Technologies
-      </Typography>
     </>
   );
 }
-
-export default Landing;

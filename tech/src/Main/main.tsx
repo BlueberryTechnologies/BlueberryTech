@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Landing from "./Landing.tsx";
-import "./assets/CSS/index.css";
+import Landing from "../Landing/Landing.tsx";
+import "./main.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

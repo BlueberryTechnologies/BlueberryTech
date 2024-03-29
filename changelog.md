@@ -1,5 +1,10 @@
 # Website Changelog
 
+
+### 03/28/24 - Pre 1.0 Update 1
+  
+- We are working on implementing a React site instead of just HTML and CSS.
+
 ### 9/13/23 - Version a4.7.7.1
 
 - Changed various image color and hue.

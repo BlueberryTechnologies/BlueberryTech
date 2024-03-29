@@ -1,6 +1,6 @@
 import { useState } from "react";
 import blueberryLogo from "../data/Images/logotransparent.png";
-import githubLogo from "./assets/github-mark.svg";
+import githubLogo from "./assets/github-mark-white.svg";
 import "./Landing.css";
 
 function Landing() {

@@ -1,6 +1,6 @@
 import { Link, Typography } from "@mui/material";
-import blueberryLogo from "./assets/Images/logotransparent.png";
-import githubLogo from "./assets/Images/github-mark-white.svg";
+import blueberryLogo from "./assets/Images/ImageFiles/logotransparent.png";
+import githubLogo from "./assets/Images/SVG/github-mark-white.svg";
 import "./assets/CSS/Landing.css";
 
 function Landing() {

@@ -1,27 +1,26 @@
-import { useState } from "react";
+import { Link, Typography } from "@mui/material";
 import blueberryLogo from "../data/Images/logotransparent.png";
 import githubLogo from "./assets/github-mark-white.svg";
 import "./Landing.css";
 
 function Landing() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
-        <a href="https://blueberry.dev" target="_blank">
+        <Link href="https://blueberry.dev" target="_blank">
           <img src={blueberryLogo} className="logo" alt="Blueberry logo" />
-        </a>
+        </Link>
       </div>
-      <h1>Blueberry Technologies</h1>
+      <Typography variant="h1">Blueberry Technologies</Typography>
       <div className="card">
         <button>
-          <a href="https://github.com/BlueberryTechnologies" target="_blank">
+          <Link href="https://github.com/BlueberryTechnologies" target="_blank">
             <img src={githubLogo} className="githubLogo"></img>
-          </a>
+          </Link>
         </button>
       </div>
-      <p className="read-the-docs">© 2024 Blueberry Technologies</p>
+      <Typography className="read-the-docs">© 2024 Blueberry Technologies</Typography>
     </>
   );
 }

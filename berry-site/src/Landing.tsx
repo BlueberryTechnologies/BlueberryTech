@@ -13,7 +13,7 @@ function Landing() {
           <img src={blueberryLogo} className="logo" alt="Blueberry logo" />
         </a>
       </div>
-      <h1>Blueberry Technologies</h1>
+      <h1 className="header">Blueberry Technologies</h1>
       <div className="card">
         <button>
           <a href="https://github.com/BlueberryTechnologies" target="_blank">

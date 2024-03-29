@@ -1,8 +1,17 @@
+@font-face {
+  font-family: "BlueberryCorporate";
+  src: url(../data/Fonts/CorporateFont/BlueberryDevFont_LN.otf);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+.header {
+  font-family: BlueberryCorporate;
+  font-size: 4em;
 }
 
 .logo {

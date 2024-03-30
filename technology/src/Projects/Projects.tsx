@@ -4,6 +4,7 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Mango from "./ProjectCards/Mango";
 import ClosetIQ from "./ProjectCards/ClosetIQ";
+import BBTBE from "./ProjectCards/BBTBE";
 
 import "./Projects.css"; // CSS File
 
@@ -27,6 +28,11 @@ export default function Projects() {
         <Grid item xs={4}>
           <Item>
             <ClosetIQ />
+          </Item>
+        </Grid>
+        <Grid item xs={4}>
+          <Item>
+            <BBTBE />
           </Item>
         </Grid>
       </Grid>

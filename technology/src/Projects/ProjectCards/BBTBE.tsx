@@ -8,7 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 import "./Card.css";
 
-export default function ClosetIQ() {
+export default function BBTBE() {
   return (
     <Card variant="outlined" sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -18,10 +18,10 @@ export default function ClosetIQ() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          ClosetIQ
+          Blueberry Tech Barcode Editor
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Closet Manager written in C!
+          A printer utinity written in Java!
         </Typography>
       </CardContent>
       <CardActions>

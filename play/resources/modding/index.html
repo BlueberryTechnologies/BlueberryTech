@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>The Basics of Minecraft Modding</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Getting started with the basics of Minecraft Modding." />
+    <meta
+      name="keywords"
+      content="minecraft, modding, minecraft mods, blueberry technology, programming, how to" />
+  </head>
+  <table width="80%" align="center">
+    <tbody style="font-size: 1.1em">
+      <tr>
+        <td>
+          <div align="center">
+            <h1>
+              <img
+                width="45"
+                height="45"
+                src="../../banana.png"
+                alt="insert logo here " />
+              <a
+                style="font-size: 1.125em; text-decoration: none; color: black"
+                href="https://blueberry.dev"
+                >Blueberry Technologies</a
+              >
+            </h1>
+            <p>
+              Welcome if you have any questions, please email
+              <a href="mailto:help@blueberry.dev">help@blueberry.dev</a>.
+            </p>
+            <p>
+              All of our projects and content is licensed under the
+              <a
+                href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text"
+                >GNU General Public License Version 3.0</a
+              >.
+            </p>
+          </div>
+          <hr />
+          <!--
+
+            ANYTHING AFTER THIS IS CHANGEABLE
+
+          -->
+          <div align="justify">
+            <h2 style="margin-bottom: 0em">Getting started with Modding.</h2>
+            <p>
+              In order to start modding Minecraft, you will have to choose a mod
+              loader.
+            </p>
+            <p>There are various mod loaders to choose from such as:</p>
+
+            <table style="width: 100%; margin-top: 0.5em">
+              <tr>
+                <td>
+                  <a href="https://neoforged.net/">NeoForge</a>
+                </td>
+                <td>
+                  <a href="https://fabricmc.net/">Fabric</a>
+                </td>
+                <td><a href="https://quiltmc.org/en/">Quilt</a></td>
+                <td>
+                  <a
+                    href="https://files.minecraftforge.net/net/minecraftforge/forge/"
+                    >Forge</a
+                  >
+                </td>
+                <!-- Adding a new element here (td) would go horizontally across the site. -->
+              </tr>
+
+              <!-- Adding a new element here (td) would go horizontally across the site. -->
+
+              <!-- Adding a new element here (tr) would go vertically down the site. -->
+            </table>
+            <p>
+              Some of these loaders benefit more than others in certain
+              scenarios but for the most part the two main loaders have
+              historically been
+              <b>Fabric</b> and <b>Forge</b>.
+            </p>
+            <hr />
+            <h2>What mod loader should I use?</h2>
+            <h3 style="margin-bottom: 0em">Fabric / Quilt</h3>
+            <p>
+              Fabric is very lightweight and useful if you are struggling for
+              performance. If you have a low-end computer Fabric doesn't use a
+              lot of resources which makes it easy to run on some older or less
+              equipped devices. There are popular mods such as
+              <a href="https://modrinth.com/mod/sodium/versions">Sodium</a>
+              which improves performance on low-equipped devices. This popular
+              mod is only available on the Fabric loader and cannot be used by
+              NeoForge or Forge.
+            </p>
+            <p>
+              Quilt is a fork of Fabric and it is a work in progress attempting
+              to make it an easier mod loader for developers to make their mods
+              on. Some developers are slowly adopting Quilt but as of writing
+              this, Quilt is not mass adopted and we would still recommend using
+              Fabric, but we will be keeping a close eye on the project.
+            </p>
+            <p>
+              If you are more of a Vanilla+ player or will not have heavy
+              modpacks I would recommend Fabric.
+            </p>
+            <hr />
+            <h3 style="margin-bottom: 0em">NeoForge / Forge</h3>
+            <p>
+              For various reasons (<a
+                href="https://neoforged.net/news/theproject/"
+                >explained here)</a
+              >
+              nearly the entire dev team of Minecraft Forge separated from the
+              owner LexManos and the original Forge project due to conflicts and
+              established NeoForge. NeoForge is the successor to Minecraft Forge
+              and more mod developers are starting to support it as well as
+              continuing support for Minecraft Forge.
+            </p>
+            <p>
+              NeoForge and Forge are more meant for bigger mods/modpacks and are
+              less constrained when it comes to performance. Expect bigger
+              bulkier modpacks to be NeoForge/Forge only but the catch is you
+              will need the hardware to support it.
+            </p>
+            <hr />
+            <p>
+              Our personal favorite at Blueberry Tech is the Fabric loader
+              mostly because of the performance gain and also the widespread mod
+              support.
+            </p>
+            <hr />
+            <h2 style="margin-bottom: 0em">Installation</h2>
+            <h3 style="margin-bottom: 0em">Installing Java</h3>
+            <p>
+              Before we go installing mod loaders and mods we need to make sure
+              we have the basics covered.
+            </p>
+            <p>
+              Minecraft is a game that was written in the programming language
+              <b>Java</b> this means that naturally the game supports Java mods.
+              You have to make sure you have Java installed on your machine
+              before anything happens.
+            </p>
+            <p>
+              All recent versions of Minecraft come packaged with the correct
+              version of Java, but you may find that you need to install Java
+              separately.
+            </p>
+            <ol>
+              <li>
+                Minecraft Version <b>&lt1.17</b> require
+                <a href="https://www.java.com/en/download/">Java 8</a>
+              </li>
+              <li>
+                Minecraft Version <b>1.17-1.17.1</b> require
+                <a
+                  href="https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html"
+                  >Java 16</a
+                >
+              </li>
+              <li>
+                Minecraft Version <b>1.18-1.20.5</b> require
+                <a
+                  href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html"
+                  >Java 17</a
+                >
+              </li>
+              <li>
+                Minecraft Version <b>&gt1.20.5</b> require
+                <a
+                  href="https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html"
+                  >Java 21</a
+                >
+              </li>
+            </ol>
+            <hr />
+            <h3 style="margin-bottom: 0em">Installing the mod loader</h3>
+            <p>
+              Once you have Java installed and have chosen the mod loader of
+              your choice you will have to install that on your computer before
+              you begin installing individual mods. For this guide we will be
+              installing the
+              <b>Fabric</b> mod loader.
+            </p>
+            <ol>
+              <li>
+                Close all instances of Minecraft that are open on your computer.
+              </li>
+              <li>
+                Download the loader file, in this case we will be downloading
+                the Fabric installer which comes in a <b>.jar</b> file.
+              </li>
+              <li>
+                When you run the installer make sure you install the client
+                version
+              </li>
+            </ol>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <style>
+    footer {
+      padding-top: 100px;
+    }
+  </style>
+  <footer>
+    <div align="center">
+      <p>
+        If you have any questions, please email us at
+        <a href="mailto:help@blueberry.dev">help@blueberry.dev</a>
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+  <!-- https://github.com/leonardosnt/mc-player-counter/tree/master -->
+</html>

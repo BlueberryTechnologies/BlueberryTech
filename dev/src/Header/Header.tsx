@@ -5,7 +5,7 @@ import BlueberryLogo from "../assets/header.png";
 import classes from "./Header.module.css";
 
 const links = [
-  { link: "/about", label: "Home" },
+  { link: "/", label: "Home" },
   { link: "/server-status.html", label: "Server Status" }, // Use absolute paths
 ];
 
